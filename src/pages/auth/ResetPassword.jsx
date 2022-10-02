@@ -1,22 +1,25 @@
 import React from "react";
-import { Link } from "react-router-dom";
 import { Formik, Field, Form, ErrorMessage } from "formik";
 import * as Yup from "yup";
-import { dayspringLogo } from "../../../utils/importAssets";
+import { dayspringLogo } from "../../utils/importAssets";
 
-const StudentLogin = () => {
+const ResetPassword = () => {
   // Formik initial values
   const initialValues = {
-    student_num: "",
+    otp_num: "",
     password: "",
+    confirm_password: "",
   };
 
   // Formik validation schema
   const validationSchema = Yup.object().shape({
-    student_num: Yup.string().required("Please enter a valid student number."),
+    otp_num: Yup.string().required("Please enter a valid OTP number."),
     password: Yup.string()
       .min(5, "Password is too Short!")
       .required("Please enter a valid password."),
+    confirm_password: Yup.string()
+      .min(5, "Password is too Short!")
+      .required("Please confirm your password."),
   });
 
   // Login submit handler
@@ -33,18 +36,18 @@ const StudentLogin = () => {
           src={dayspringLogo}
           alt="Your Company"
         />
-        <h2 className="mt-6 text-center text-3xl font-bold tracking-tight text-gray-900">
-          Sign in to your account
+        <h2 className="mt-6 text-center text-xl font-bold tracking-tight text-gray-900">
+          Reset Password!
         </h2>
         {/* <p className="mt-2 text-center text-sm text-gray-600">
-          Or{" "}
-          <a
-            href="#"
-            className="font-medium text-indigo-600 hover:text-indigo-500"
-          >
-            start your 14-day free trial
-          </a>
-        </p> */}
+        Or{" "}
+        <a
+          href="#"
+          className="font-medium text-indigo-600 hover:text-indigo-500"
+        >
+          start your 14-day free trial
+        </a>
+      </p> */}
       </div>
 
       <div className="mt-8 sm:mx-auto sm:w-full sm:max-w-md">
@@ -58,27 +61,27 @@ const StudentLogin = () => {
               <Form className="space-y-6" action="#" method="POST">
                 <div>
                   <label
-                    htmlFor="student_num"
+                    htmlFor="_num"
                     className="block text-sm font-medium text-gray-700"
                   >
-                    Student Number
+                    OTP
                   </label>
                   <div className="mt-1">
                     <Field
-                      id="student_num"
-                      name="student_num"
-                      type="text"
-                      placeholder="Student Number"
-                      autoComplete="student_num"
+                      id="otp_num"
+                      name="otp_num"
+                      type="number"
+                      placeholder="Enter OTP"
+                      autoComplete="otp_num"
                       className={`block w-full appearance-none rounded-md border border-gray-300 px-3 py-2 placeholder-gray-400 shadow-sm focus:border-primary focus:outline-none focus:ring-primary sm:text-sm ${
-                        errors.student_num && touched.student_num
+                        errors.otp_num && touched.otp_num
                           ? "border-red-500"
                           : null
                       }`}
                     />
 
                     <ErrorMessage
-                      name="student_num"
+                      name="otp_num"
                       component="div"
                       className="text-red-500 text-sm mt-2 "
                     />
@@ -97,7 +100,7 @@ const StudentLogin = () => {
                       id="password"
                       name="password"
                       type="password"
-                      placeholder="Password"
+                      placeholder="Enter Password"
                       autoComplete="current-password"
                       className={`block w-full appearance-none rounded-md border border-gray-300 px-3 py-2 placeholder-gray-400 shadow-sm focus:border-primary focus:outline-none focus:ring-primary sm:text-sm ${
                         errors.password && touched.password
@@ -113,14 +116,31 @@ const StudentLogin = () => {
                   </div>
                 </div>
 
-                <div className="flex items-center justify-between">
-                  <div className="text-sm">
-                    <Link
-                      to="#"
-                      className="font-medium text-indigo-600 hover:text-indigo-500"
-                    >
-                      Forgot your password?
-                    </Link>
+                <div>
+                  <label
+                    htmlFor="confirm_password"
+                    className="block text-sm font-medium text-gray-700"
+                  >
+                    Confirm Password
+                  </label>
+                  <div className="mt-1">
+                    <Field
+                      id="confirm_password"
+                      name="confirm_password"
+                      type="password"
+                      placeholder="Confirm Password"
+                      autoComplete="current-password"
+                      className={`block w-full appearance-none rounded-md border border-gray-300 px-3 py-2 placeholder-gray-400 shadow-sm focus:border-primary focus:outline-none focus:ring-primary sm:text-sm ${
+                        errors.confirm_password && touched.confirm_password
+                          ? "border-red-500"
+                          : null
+                      }`}
+                    />
+                    <ErrorMessage
+                      name="confirm_password"
+                      component="div"
+                      className="text-red-500 text-sm  mt-2 "
+                    />
                   </div>
                 </div>
 
@@ -129,32 +149,16 @@ const StudentLogin = () => {
                     type="submit"
                     className="flex w-full justify-center rounded-md border border-transparent bg-primary py-2 px-4 text-sm font-medium text-white shadow-sm hover:bg-dark-blue focus:outline-none focus:ring-0 focus:ring-primary focus:ring-offset-2 transition-all duration-300 ease-out"
                   >
-                    Sign in
+                    Submit
                   </button>
                 </div>
               </Form>
             )}
           </Formik>
-
-          <div className="mt-6">
-            <div className="relative">
-              <div className="absolute inset-0 flex items-center">
-                <div className="w-full border-t border-gray-300" />
-              </div>
-              <div className="relative flex justify-center text-sm">
-                <Link
-                  to="#"
-                  className="bg-white px-2 font-medium text-indigo-600 hover:text-indigo-500"
-                >
-                  New student enrollment?
-                </Link>
-              </div>
-            </div>
-          </div>
         </div>
       </div>
     </div>
   );
 };
 
-export default StudentLogin;
+export default ResetPassword;

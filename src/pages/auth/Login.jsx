@@ -1,10 +1,12 @@
 import React from "react";
 import StudentLogin from "./components/StudentLogin";
+import StaffLogin from "./components/StaffLogin";
 
 const Login = () => {
   return (
-    <div>
+    <div className="">
       <StudentLogin />
+      <StaffLogin />
     </div>
   );
 };
