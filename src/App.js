@@ -1,12 +1,17 @@
 import React from "react";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+// Pages
+import { Login } from "./pages";
 
 function App() {
   return (
-    <div>
-      <h1 className="text-primary text-4xl font-bold font-['Work_Sans']">
-        Dayspring
-      </h1>
-    </div>
+    <>
+      <Router>
+        <Routes>
+          <Route path="/" element={<Login />} />
+        </Routes>
+      </Router>
+    </>
   );
 }
 

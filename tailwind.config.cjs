@@ -9,11 +9,12 @@ module.exports = {
     extend: {
       colors: {
         primary: "#149AF6",
+        "dark-blue": "#107bc4",
       },
       fontFamily: {
         sans: ["Work Sans"],
       },
     },
   },
-  plugins: [],
+  plugins: [require("@tailwindcss/forms")],
 };
