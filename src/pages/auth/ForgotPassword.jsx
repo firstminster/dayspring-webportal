@@ -1,7 +1,7 @@
 import React from "react";
 import { Formik, Field, Form, ErrorMessage } from "formik";
 import * as Yup from "yup";
-import { dayspringLogo } from "../../utils/importAssets";
+import { dayspringLogo } from "../../assets/importAssets";
 
 const ForgotPassword = () => {
   // Formik initial values
