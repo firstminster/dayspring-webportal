@@ -1,7 +1,7 @@
 import React from "react";
 import { Routes, Route } from "react-router-dom";
 // Pages
-import { AdminLayout, NotFound } from "../pages";
+import { AdminDashboard, NotFound } from "../pages";
 // Components
 import {
   AddStudent,
@@ -14,8 +14,8 @@ import {
 const AdminRoutes = () => {
   return (
     <Routes>
-      <Route element={<AdminLayout />}>
-        <Route index element={<Home />} />
+      <Route path="/" element={<AdminDashboard />}>
+        {/* <Route index element={<Home />} /> */}
         <Route path="all-students" element={<ViewStudents />} />
         <Route path="student-details/:id" element={<StudentDetails />} />
         <Route path="add-student/:id" element={<AddStudent />} />

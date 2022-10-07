@@ -10,21 +10,18 @@ const RouterComponent = () => {
   return (
     <>
       <Router>
-        <nav>
+        {/* <nav>
           <ul>
             <li>
               <Link to="/">Home</Link>
             </li>
             <li>
-              <Link to="/admin">Admin</Link>
-            </li>
-            <li>
-              <Link to="/books/new">New Book</Link>
+              <Link to="/admin">Admin Route</Link>
             </li>
           </ul>
-        </nav>
+        </nav> */}
         <Routes>
-          {/* Authentication */}
+          {/* Auth */}
           <Route index path="/" element={<Login />} />
           <Route path="/forgot" element={<ForgotPassword />} />
           <Route path="/reset" element={<ResetPassword />} />
