@@ -65,7 +65,7 @@ const ForgotPassword = () => {
                       type="text"
                       placeholder="Student Number / Email / Mobile"
                       // autoComplete="student_num"
-                      className={`block w-full appearance-none rounded-md border border-gray-300 px-3 py-2 placeholder-gray-400 shadow-sm focus:border-primary focus:outline-none focus:ring-primary sm:text-sm ${
+                      className={`block w-full appearance-none rounded-md border border-gray-300 px-3 py-2 placeholder-gray-400 shadow-sm focus:border-blue-primary focus:outline-none focus:ring-blue-primary sm:text-sm ${
                         errors.student_num && touched.student_num
                           ? "border-red-500"
                           : null
@@ -81,10 +81,7 @@ const ForgotPassword = () => {
                 </div>
 
                 <div>
-                  <button
-                    type="submit"
-                    className="flex w-full justify-center rounded-md border border-transparent bg-primary py-2 px-4 text-sm font-medium text-white shadow-sm hover:bg-dark-blue focus:outline-none focus:ring-0 focus:ring-primary focus:ring-offset-2 transition-all duration-300 ease-out"
-                  >
+                  <button type="submit" className="btn">
                     Proceed
                   </button>
                 </div>

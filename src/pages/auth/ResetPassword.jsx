@@ -73,7 +73,7 @@ const ResetPassword = () => {
                       type="text"
                       placeholder="Enter OTP"
                       autoComplete="otp_num"
-                      className={`block w-full appearance-none rounded-md border border-gray-300 px-3 py-2 placeholder-gray-400 shadow-sm focus:border-primary focus:outline-none focus:ring-primary sm:text-sm ${
+                      className={`block w-full appearance-none rounded-md border border-gray-300 px-3 py-2 placeholder-gray-400 shadow-sm focus:border-blue-primary focus:outline-none focus:ring-blue-primary sm:text-sm ${
                         errors.otp_num && touched.otp_num
                           ? "border-red-500"
                           : null
@@ -102,7 +102,7 @@ const ResetPassword = () => {
                       type="password"
                       placeholder="Enter Password"
                       autoComplete="current-password"
-                      className={`block w-full appearance-none rounded-md border border-gray-300 px-3 py-2 placeholder-gray-400 shadow-sm focus:border-primary focus:outline-none focus:ring-primary sm:text-sm ${
+                      className={`block w-full appearance-none rounded-md border border-gray-300 px-3 py-2 placeholder-gray-400 shadow-sm focus:border-blue-primary focus:outline-none focus:ring-blue-primary sm:text-sm ${
                         errors.password && touched.password
                           ? "border-red-500"
                           : null
@@ -130,7 +130,7 @@ const ResetPassword = () => {
                       type="password"
                       placeholder="Confirm Password"
                       autoComplete="current-password"
-                      className={`block w-full appearance-none rounded-md border border-gray-300 px-3 py-2 placeholder-gray-400 shadow-sm focus:border-primary focus:outline-none focus:ring-primary sm:text-sm ${
+                      className={`block w-full appearance-none rounded-md border border-gray-300 px-3 py-2 placeholder-gray-400 shadow-sm focus:border-blue-primary focus:outline-none focus:ring-blue-primary sm:text-sm ${
                         errors.confirm_password && touched.confirm_password
                           ? "border-red-500"
                           : null
@@ -145,10 +145,7 @@ const ResetPassword = () => {
                 </div>
 
                 <div>
-                  <button
-                    type="submit"
-                    className="flex w-full justify-center rounded-md border border-transparent bg-primary py-2 px-4 text-sm font-medium text-white shadow-sm hover:bg-dark-blue focus:outline-none focus:ring-0 focus:ring-primary focus:ring-offset-2 transition-all duration-300 ease-out"
-                  >
+                  <button type="submit" className="btn">
                     Submit
                   </button>
                 </div>

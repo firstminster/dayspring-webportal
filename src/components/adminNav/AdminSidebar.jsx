@@ -1,51 +1,51 @@
-import React, { Fragment, useState } from "react";
-import { Link, NavLink } from "react-router-dom";
+import React, { Fragment } from "react";
+import { NavLink } from "react-router-dom";
 import { Disclosure } from "@headlessui/react";
-import { Dialog, Menu, Transition } from "@headlessui/react";
-import {
-  CalendarIcon,
-  ChartBarIcon,
-  FolderIcon,
-  HomeIcon,
-  InboxIcon,
-  UsersIcon,
-  XMarkIcon,
-} from "@heroicons/react/24/outline";
+import { Dialog, Transition } from "@headlessui/react";
+import { XMarkIcon } from "@heroicons/react/24/outline";
+import { FaThLarge, FaUserGraduate, FaChalkboardTeacher } from "react-icons/fa";
+// import { IoIosPeople } from "react-icons/io";
+import { dayspringLogo } from "../../assets/importAssets";
 
 // Navigation Menus
 const navigation = [
-  { name: "Dashboard", icon: HomeIcon, current: true, href: "/admin" },
+  {
+    name: "Dashboard",
+    icon: FaThLarge,
+    current: true,
+    href: "/admin",
+  },
   {
     name: "Students",
-    icon: UsersIcon,
+    icon: FaUserGraduate,
     current: false,
     children: [
       { name: "View Students", href: "/admin/all-students" },
-      { name: "Add Student", href: "/admin/add-student/:id" },
+      { name: "Add Student", href: "/admin/add-student/1" },
+      // { name: "Calendar", href: "#" },
+      // { name: "Settings", href: "#" },
+    ],
+  },
+  {
+    name: "Teachers",
+    icon: FaChalkboardTeacher,
+    current: false,
+    children: [
+      { name: "View Teachers", href: "/admin/all-teachers" },
+      { name: "Add Students", href: "/admin/add-teacher/1" },
       // { name: "Calendar", href: "#" },
       // { name: "Settings", href: "#" },
     ],
   },
   // {
-  //   name: "Projects",
-  //   icon: FolderIcon,
+  //   name: "Parents",
+  //   icon: IoIosPeople,
   //   current: false,
   //   children: [
-  //     { name: "Overview", href: "#" },
-  //     { name: "Members", href: "#" },
-  //     { name: "Calendar", href: "#" },
-  //     { name: "Settings", href: "#" },
-  //   ],
-  // },
-  // {
-  //   name: "Calendar",
-  //   icon: CalendarIcon,
-  //   current: false,
-  //   children: [
-  //     { name: "Overview", href: "#" },
-  //     { name: "Members", href: "#" },
-  //     { name: "Calendar", href: "#" },
-  //     { name: "Settings", href: "#" },
+  //     { name: "View Parents", href: "#" },
+  //     { name: "Add Parents", href: "#" },
+  //     // { name: "Calendar", href: "#" },
+  //     // { name: "Settings", href: "#" },
   //   ],
   // },
   // {
@@ -76,7 +76,7 @@ function classNames(...classes) {
   return classes.filter(Boolean).join(" ");
 }
 
-const SideBarMenu = ({ sidebarOpen, setSidebarOpen }) => {
+const AdminSidebar = ({ sidebarOpen, setSidebarOpen }) => {
   return (
     <>
       <Transition.Root show={sidebarOpen} as={Fragment}>
@@ -134,7 +134,7 @@ const SideBarMenu = ({ sidebarOpen, setSidebarOpen }) => {
                 <div className="flex flex-shrink-0 items-center px-4">
                   <img
                     className="h-8 w-auto"
-                    src="https://tailwindui.com/img/logos/mark.svg?color=indigo&shade=600"
+                    src={dayspringLogo}
                     alt="Your Company"
                   />
                 </div>
@@ -177,7 +177,7 @@ const SideBarMenu = ({ sidebarOpen, setSidebarOpen }) => {
                                   item.current
                                     ? "bg-gray-100 text-gray-900"
                                     : "bg-white text-gray-600 hover:bg-gray-50 hover:text-gray-900",
-                                  "group w-full flex items-center pl-2 pr-1 py-2 text-left text-sm font-medium rounded-md focus:outline-none focus:ring-2 focus:ring-indigo-500"
+                                  "group w-full flex items-center pl-2 pr-1 py-2 text-left text-sm font-medium rounded-md focus:outline-none focus:ring-2 focus:ring-blue-primary"
                                 )}
                               >
                                 <item.icon
@@ -235,7 +235,7 @@ const SideBarMenu = ({ sidebarOpen, setSidebarOpen }) => {
           <div className="flex flex-shrink-0 items-center px-4">
             <img
               className="h-8 w-auto"
-              src="https://tailwindui.com/img/logos/mark.svg?color=indigo&shade=600"
+              src={dayspringLogo}
               alt="Your Company"
             />
           </div>
@@ -277,7 +277,7 @@ const SideBarMenu = ({ sidebarOpen, setSidebarOpen }) => {
                             item.current
                               ? "bg-gray-100 text-gray-900"
                               : "bg-white text-gray-600 hover:bg-gray-50 hover:text-gray-900",
-                            "group w-full flex items-center pl-2 pr-1 py-2 text-left text-sm font-medium rounded-md focus:outline-none focus:ring-2 focus:ring-indigo-500"
+                            "group w-full flex items-center pl-2 pr-1 py-2 text-left text-sm font-medium rounded-md focus:outline-none focus:ring-2 focus:ring-blue-primary"
                           )}
                         >
                           <item.icon
@@ -323,4 +323,4 @@ const SideBarMenu = ({ sidebarOpen, setSidebarOpen }) => {
   );
 };
 
-export default SideBarMenu;
+export default AdminSidebar;

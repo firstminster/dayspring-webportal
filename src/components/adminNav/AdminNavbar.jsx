@@ -1,20 +1,11 @@
-import React, { Fragment, useState } from "react";
+import React, { Fragment } from "react";
+import { NavLink } from "react-router-dom";
 import { Dialog, Menu, Transition } from "@headlessui/react";
-import {
-  Bars3BottomLeftIcon,
-  BellIcon,
-  CalendarIcon,
-  ChartBarIcon,
-  FolderIcon,
-  HomeIcon,
-  InboxIcon,
-  UsersIcon,
-  XMarkIcon,
-} from "@heroicons/react/24/outline";
+import { Bars3BottomLeftIcon, BellIcon } from "@heroicons/react/24/outline";
 import { MagnifyingGlassIcon } from "@heroicons/react/20/solid";
 
 const userNavigation = [
-  { name: "Your Profile", href: "#" },
+  { name: "Your Profile", href: "/admin/profile" },
   { name: "Settings", href: "#" },
   { name: "Sign out", href: "#" },
 ];
@@ -23,12 +14,12 @@ function classNames(...classes) {
   return classes.filter(Boolean).join(" ");
 }
 
-const AdminNavMenu = ({ setSidebarOpen }) => {
+const AdminNavbar = ({ setSidebarOpen }) => {
   return (
     <div className="sticky top-0 z-10 flex h-16 flex-shrink-0 bg-white shadow">
       <button
         type="button"
-        className="border-r border-gray-200 px-4 text-gray-500 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-indigo-500 md:hidden"
+        className="border-r border-gray-200 px-4 text-gray-500 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-blue-primary md:hidden"
         onClick={() => setSidebarOpen(true)}
       >
         <span className="sr-only">Open sidebar</span>
@@ -57,7 +48,7 @@ const AdminNavMenu = ({ setSidebarOpen }) => {
         <div className="ml-4 flex items-center md:ml-6">
           <button
             type="button"
-            className="rounded-full bg-white p-1 text-gray-400 hover:text-gray-500 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2"
+            className="rounded-full bg-white p-1 text-gray-400 hover:text-gray-500 focus:outline-none focus:ring-2 focus:ring-blue-primary focus:ring-offset-2"
           >
             <span className="sr-only">View notifications</span>
             <BellIcon className="h-6 w-6" aria-hidden="true" />
@@ -66,7 +57,7 @@ const AdminNavMenu = ({ setSidebarOpen }) => {
           {/* Profile dropdown */}
           <Menu as="div" className="relative ml-3">
             <div>
-              <Menu.Button className="flex max-w-xs items-center rounded-full bg-white text-sm focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2">
+              <Menu.Button className="flex max-w-xs items-center rounded-full bg-white text-sm focus:outline-none focus:ring-2 focus:ring-blue-primary focus:ring-offset-2">
                 <span className="sr-only">Open user menu</span>
                 <img
                   className="h-8 w-8 rounded-full"
@@ -88,15 +79,15 @@ const AdminNavMenu = ({ setSidebarOpen }) => {
                 {userNavigation.map((item) => (
                   <Menu.Item key={item.name}>
                     {({ active }) => (
-                      <a
-                        href={item.href}
+                      <NavLink
+                        to={item.href}
                         className={classNames(
                           active ? "bg-gray-100" : "",
                           "block px-4 py-2 text-sm text-gray-700"
                         )}
                       >
                         {item.name}
-                      </a>
+                      </NavLink>
                     )}
                   </Menu.Item>
                 ))}
@@ -109,4 +100,4 @@ const AdminNavMenu = ({ setSidebarOpen }) => {
   );
 };
 
-export default AdminNavMenu;
+export default AdminNavbar;
