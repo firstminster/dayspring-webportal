@@ -133,7 +133,7 @@ const AdminSidebar = ({ sidebarOpen, setSidebarOpen }) => {
                 </Transition.Child>
                 <div className="flex flex-shrink-0 items-center px-4">
                   <img
-                    className="h-8 w-auto"
+                    className="h-14 w-auto"
                     src={dayspringLogo}
                     alt="Your Company"
                   />
@@ -234,7 +234,7 @@ const AdminSidebar = ({ sidebarOpen, setSidebarOpen }) => {
         <div className="flex flex-grow flex-col overflow-y-auto border-r border-gray-200 bg-white pt-5 pb-4">
           <div className="flex flex-shrink-0 items-center px-4">
             <img
-              className="h-8 w-auto"
+              className="h-14 w-auto"
               src={dayspringLogo}
               alt="Your Company"
             />
