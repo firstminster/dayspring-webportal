@@ -1,6 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import { ChevronRightIcon } from "@heroicons/react/20/solid";
+import { Table } from "../../..";
 
 const ViewStudents = () => {
   return (
@@ -23,6 +24,10 @@ const ViewStudents = () => {
             <Link to="/admin/all-students">Students</Link>
           </li>
         </ul>
+      </div>
+      {/* Table */}
+      <div className="">
+        <Table />
       </div>
     </div>
   );

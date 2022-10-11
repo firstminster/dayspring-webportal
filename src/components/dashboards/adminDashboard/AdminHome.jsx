@@ -1,6 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
-// Import Icons
+// Icons
 import { FaUserGraduate, FaSchool } from "react-icons/fa";
 import { GiTeacher } from "react-icons/gi";
 import { IoIosPeople } from "react-icons/io";

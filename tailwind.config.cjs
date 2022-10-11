@@ -19,6 +19,8 @@ module.exports = {
         "outrageous-orange": "#F46941",
         "lavender-web": "#E2E1FE",
         "medium-slate-blue": "#6D6BF9",
+        "green-pantone": "#27AE48",
+        honeydew: "#E0EFE6",
       },
       fontFamily: {
         sans: ["Work Sans"],
