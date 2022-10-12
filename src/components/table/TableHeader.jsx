@@ -11,14 +11,18 @@ const TableHeader = () => {
   // console.log(studentsTableTitle);
   return (
     <TableHead>
-      <TableRow sx={{ backgroundColor: "#107bc4", color: "#fff" }}>
+      <TableRow>
         {studentsTableTitle.map((title) => {
           const { _id, name, align } = title;
           return (
             <TableCell
               key={_id}
               align={align}
-              sx={{ color: "#fff", fontSize: "14px" }}
+              sx={{
+                backgroundColor: "#107bc4",
+                color: "#fff",
+                fontSize: "14px",
+              }}
               style={{ minWidth: 100 }}
             >
               {name}

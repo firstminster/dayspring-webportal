@@ -1,5 +1,11 @@
 // Students table title
 export const studentsTableTitle = [
+  // {
+  //   _id: "1",
+  //   name: "S/N",
+  //   align: "left",
+  //   minWidth: 170,
+  // },
   {
     _id: "1",
     name: "ID",

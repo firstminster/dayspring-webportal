@@ -7,6 +7,8 @@ import TableCell from "@mui/material/TableCell";
 // Icons
 import { FaEdit } from "react-icons/fa";
 import { MdDelete, MdEdit } from "react-icons/md";
+// Images
+import { appleImg } from "../../assets/importAssets";
 
 const StyledTableRow = styled(TableRow)(({ theme }) => ({
   "&:nth-of-type(odd)": {
@@ -25,8 +27,13 @@ const TableInnerRow = ({ rowData }) => {
       <TableCell component="th" scope="row">
         {id}
       </TableCell>
-      <TableCell style={{ width: 160 }} align="left">
-        {name}
+      <TableCell style={{ width: 200 }} align="left">
+        <Link to="/admin/student-details/1 " className="flex items-center">
+          <img src={appleImg} alt="" className="rounded-full h-10 w-10 " />
+          <p className="pl-2 font-semibold hover:text-blue-primary transition-all duration-300 ease-out">
+            {name}
+          </p>
+        </Link>
       </TableCell>
       <TableCell style={{ width: 160 }} align="left">
         {grade}
