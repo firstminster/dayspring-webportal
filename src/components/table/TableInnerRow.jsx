@@ -30,12 +30,12 @@ const TableInnerRow = ({ rowData }) => {
       <TableCell style={{ width: 200 }} align="left">
         <Link to="/admin/student-details/1 " className="flex items-center">
           <img src={appleImg} alt="" className="rounded-full h-10 w-10 " />
-          <p className="pl-2 font-semibold hover:text-blue-primary transition-all duration-300 ease-out">
+          <p className="pl-2 font-medium hover:text-blue-primary transition-all duration-300 ease-out">
             {name}
           </p>
         </Link>
       </TableCell>
-      <TableCell style={{ width: 160 }} align="left">
+      <TableCell style={{ width: 160 }} align="right">
         {grade}
       </TableCell>
       <TableCell style={{ width: 160 }} align="left">
@@ -54,8 +54,8 @@ const TableInnerRow = ({ rowData }) => {
         <div className="flex justify-center items-center">
           <span className="bg-honeydew p-1 mr-3 rounded">
             <Link to="/admin/edit-student/1">
-              <FaEdit size={20} className="text-green-pantone" />
-              {/* <MdEdit size={20} className="text-green-pantone" /> */}
+              {/* <FaEdit size={20} className="text-green-pantone" /> */}
+              <MdEdit size={20} className="text-green-pantone" />
             </Link>
           </span>
           <button className="bg-outrageous-orange p-1 rounded">

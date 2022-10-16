@@ -1,9 +1,11 @@
+// Web > Navbar
+export { default as Navbar } from "./navigation/navbar/Navbar";
 // Admin
 export { default as AdminHome } from "./dashboards/adminDashboard/AdminHome";
 export { default as AdminProfile } from "./dashboards/adminDashboard/Profile";
 // Admin > Navbar
-export { default as AdminSidebar } from "./adminNav/AdminSidebar";
-export { default as AdminNavbar } from "./adminNav/AdminNavbar";
+export { default as AdminSidebar } from "./navigation/adminNav/AdminSidebar";
+export { default as AdminNavbar } from "./navigation/adminNav/AdminNavbar";
 // Admin > Dashboard > Students
 export { default as ViewStudents } from "./dashboards/adminDashboard/student/ViewStudents";
 export { default as AddStudent } from "./dashboards/adminDashboard/student/AddStudent";

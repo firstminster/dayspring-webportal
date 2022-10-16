@@ -5,7 +5,7 @@ import { Dialog, Transition } from "@headlessui/react";
 import { XMarkIcon } from "@heroicons/react/24/outline";
 import { FaThLarge, FaUserGraduate, FaChalkboardTeacher } from "react-icons/fa";
 // import { IoIosPeople } from "react-icons/io";
-import { dayspringLogo } from "../../assets/importAssets";
+import { dayspringLogo } from "../../../assets/importAssets";
 
 // Navigation Menus
 const navigation = [

@@ -20,8 +20,8 @@ export const studentsTableTitle = [
   },
   {
     _id: "3",
-    name: "Grade",
-    align: "left",
+    name: "Class",
+    align: "right",
     minWidth: 170,
   },
   {
