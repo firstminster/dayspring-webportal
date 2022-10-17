@@ -1,7 +1,11 @@
 import React from "react";
 
 const Admission = () => {
-  return <div>Admission</div>;
+  return (
+    <section className="container relative">
+      <div className="absolute top-[100px]">Admission</div>
+    </section>
+  );
 };
 
 export default Admission;

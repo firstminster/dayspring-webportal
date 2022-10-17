@@ -155,7 +155,7 @@ const StaffLogin = () => {
       </div>
       <div className="relative hidden w-0 flex-1 lg:block">
         <img
-          className="absolute inset-0 h-screen w-full object-cover"
+          className="absolute top-[98px] inset-0 h-[90%] w-full object-cover"
           src={purpleShelvesImg}
           alt=""
         />

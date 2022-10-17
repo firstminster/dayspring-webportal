@@ -21,6 +21,7 @@ module.exports = {
         "medium-slate-blue": "#6D6BF9",
         "green-pantone": "#27AE48",
         honeydew: "#E0EFE6",
+        "medium-orchid": "#B14AED",
       },
       fontFamily: {
         sans: ["Work Sans"],

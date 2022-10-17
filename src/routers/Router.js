@@ -12,10 +12,7 @@ const RouterComponent = () => {
         <Routes>
           {/* Website */}
           <Route path="/*" element={<WebRoutes />} />
-          {/* Auth */}
-          <Route index path="/login" element={<Login />} />
-          <Route path="/forgot" element={<ForgotPassword />} />
-          <Route path="/reset" element={<ResetPassword />} />
+
           {/* Admin Dashboard */}
           <Route path="/admin/*" element={<AdminRoutes />} />
           {/* NotFound */}

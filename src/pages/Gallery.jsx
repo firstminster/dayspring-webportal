@@ -1,7 +1,11 @@
 import React from "react";
 
 const Gallery = () => {
-  return <div>Gallery</div>;
+  return (
+    <section className="container relative">
+      <div className="absolute top-[100px]">Gallery</div>
+    </section>
+  );
 };
 
 export default Gallery;
