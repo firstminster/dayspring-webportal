@@ -46,17 +46,31 @@ const Navbar = () => {
             </NavLink>
           </div>
           <div
-            className="absolute top-0 right-0 lg:hidden m-6"
+            className="absolute top-0 right-0 lg:hidden m-6 cursor-pointer"
             onClick={menuActiveHandler}
           >
-            {isMenuActive ? <FaTimes size={20} /> : <FaBars size={20} />}
+            {isMenuActive ? (
+              <FaTimes
+                size={20}
+                className="transition-all duration-700 ease-in-out"
+              />
+            ) : (
+              <FaBars
+                size={20}
+                className="transition-all duration-700 ease-in-out"
+              />
+            )}
           </div>
         </div>
         <div
           className=" justify-between items-center w-full xl:flex md:w-auto md:order-1"
           id="navbar-sticky"
         >
-          <ul className=" absolute top-[55px] md:top-[69px] right-[10px] h-[390px] w-[183px] lg:h-auto lg:w-auto lg:static flex flex-col p-4 mt-4 bg-white rounded-b-[10px] border border-gray-100 lg:flex-row space-y-[22px] lg:space-y-0 lg:space-x-9 md:mt-0 text-lg lg:text-[15px] xl:text-lg md:font-normal lg:border-0  lg:bg-transparent ">
+          <ul
+            className={` ${
+              isMenuActive ? "nav-menu active" : "nav-menu inactive"
+            }`}
+          >
             <li
             // className="lg:px-[35px]"
             >
@@ -73,7 +87,7 @@ const Navbar = () => {
             <li className="flex items-center">
               <NavLink to="/">Press</NavLink>
               <span>
-                <MdKeyboardArrowDown />
+                <MdKeyboardArrowDown className="hidden lg:block" />
               </span>
             </li>
             <li
