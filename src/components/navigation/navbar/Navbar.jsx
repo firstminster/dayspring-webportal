@@ -56,7 +56,7 @@ const Navbar = () => {
           className=" justify-between items-center w-full xl:flex md:w-auto md:order-1"
           id="navbar-sticky"
         >
-          <ul className=" absolute top-[55px] md:top-[69px] right-0 h-[346px] w-[183px] lg:h-fit lg:w-auto lg:static flex flex-col p-4 mt-4 bg-white shadow-sm lg:shadow-none rounded-b-lg border  lg:flex-row lg:space-x-9 md:mt-0 text-[15px] xl:text-lg md:font-normal md:border-0  lg:bg-transparent ">
+          <ul className=" absolute top-[55px] md:top-[69px] right-[10px] h-[390px] w-[183px] lg:h-auto lg:w-auto lg:static flex flex-col p-4 mt-4 bg-white rounded-b-[10px] border border-gray-100 lg:flex-row space-y-[22px] lg:space-y-0 lg:space-x-9 md:mt-0 text-lg lg:text-[15px] xl:text-lg md:font-normal lg:border-0  lg:bg-transparent ">
             <li
             // className="lg:px-[35px]"
             >
@@ -82,6 +82,9 @@ const Navbar = () => {
               <NavLink to="/contact" className="">
                 Contact Us
               </NavLink>
+            </li>
+            <li>
+              <hr className="text-blue-primary border border-blue-primary w-[124px] lg:hidden" />
             </li>
             <li className="lg:hidden">
               <NavLink to="/admission" className="">
