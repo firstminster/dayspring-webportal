@@ -21,7 +21,7 @@ const WebRoutes = () => {
       <Routes>
         <Route index path="/" element={<Home />} />
         {/* Auth */}
-        <Route index path="/login" element={<Login />} />
+        <Route path="/login" element={<Login />} />
         <Route path="/forgot" element={<ForgotPassword />} />
         <Route path="/reset" element={<ResetPassword />} />
         {/* Web */}
