@@ -1,9 +1,9 @@
 import React, { useState } from "react";
 import { FaArrowRight, FaBars, FaTimes } from "react-icons/fa";
-import { HiBars3 } from "react-icons/hi";
 import { MdKeyboardArrowDown } from "react-icons/md";
 import { Link, NavLink } from "react-router-dom";
 import { dayspringLogo } from "../../../assets/importAssets";
+import Dropdown from "./Dropdown";
 
 // Active link
 // const activeLink = ({ isActive }) =>
@@ -15,6 +15,23 @@ const Navbar = () => {
 
   const menuActiveHandler = () => setIsMenuActive(!isMenuActive); // set isMenuActive to true
   const closeMobileMenuHandler = () => setIsMenuActive(false); // set isMenuActive to false
+
+  // dropdown menu
+  const onMouseEnter = () => {
+    if (window.innerWidth < 960) {
+      setDropdown(false);
+    } else {
+      setDropdown(true);
+    }
+  };
+
+  const onMouseLeave = () => {
+    if (window.innerWidth < 960) {
+      setDropdown(false);
+    } else {
+      setDropdown(false);
+    }
+  };
 
   return (
     <nav className="bg-white px-2 sm:px-4 py-2.5 fixed h-[75px] lg:h-[95px] w-full z-20 top-0 left-0 shadow-sm ">
@@ -62,38 +79,57 @@ const Navbar = () => {
             )}
           </div>
         </div>
-        <div
-          className=" justify-between items-center w-full xl:flex md:w-auto md:order-1"
-          id="navbar-sticky"
-        >
+        <div className="justify-between items-center w-full xl:flex md:w-auto md:order-1">
           <ul
             className={` ${
-              isMenuActive ? "nav-menu active" : "nav-menu inactive"
-            }`}
+              isMenuActive
+                ? "absolute top-[55px] md:top-[69px] right-0 transition-all duration-500 ease-in-out"
+                : "absolute top-0 -right-[100%] transition-all duration-500 ease-in-out"
+            } nav-menu`}
           >
-            <li
-            // className="lg:px-[35px]"
-            >
-              <NavLink to="/">Home</NavLink>
+            <li>
+              <NavLink to="/" onClick={closeMobileMenuHandler}>
+                Home
+              </NavLink>
             </li>
             <li className="">
-              <NavLink to="/about">About</NavLink>
+              <NavLink to="/about" onClick={closeMobileMenuHandler}>
+                About
+              </NavLink>
             </li>
             <li className="">
-              <NavLink to="/gallery" className="">
+              <NavLink
+                to="/gallery"
+                className=""
+                onClick={closeMobileMenuHandler}
+              >
                 Gallery
               </NavLink>
             </li>
-            <li className="flex items-center">
-              <NavLink to="/">Press</NavLink>
-              <span>
-                <MdKeyboardArrowDown className="hidden lg:block" />
-              </span>
-            </li>
             <li
-            // className="lg:ml-[35px] lg:mr-[100px] xl:mr-[200px]"
+              className=""
+              // onMouseEnter={onMouseEnter}
+              // onMouseLeave={onMouseLeave}
             >
-              <NavLink to="/contact" className="">
+              <NavLink
+                to="/blogs"
+                className="flex items-center"
+                onClick={closeMobileMenuHandler}
+              >
+                Press
+                <span>
+                  <MdKeyboardArrowDown className="hidden lg:block" />
+                </span>
+              </NavLink>
+              {/* {dropdown && <Dropdown  />} */}
+              {/* <Dropdown /> */}
+            </li>
+            <li>
+              <NavLink
+                to="/contact"
+                className=""
+                onClick={closeMobileMenuHandler}
+              >
                 Contact Us
               </NavLink>
             </li>
@@ -101,12 +137,20 @@ const Navbar = () => {
               <hr className="text-blue-primary border border-blue-primary w-[124px] lg:hidden" />
             </li>
             <li className="lg:hidden">
-              <NavLink to="/admission" className="">
+              <NavLink
+                to="/admission"
+                className=""
+                onClick={closeMobileMenuHandler}
+              >
                 Admission
               </NavLink>
             </li>
             <li className="lg:hidden">
-              <NavLink to="/login" className="">
+              <NavLink
+                to="/login"
+                className=""
+                onClick={closeMobileMenuHandler}
+              >
                 Log In
               </NavLink>
             </li>

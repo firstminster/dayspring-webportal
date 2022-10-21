@@ -2,6 +2,7 @@
 export { default as Home } from "./Home";
 export { default as About } from "./About";
 export { default as Gallery } from "./Gallery";
+export { default as Blog } from "./Blog";
 export { default as Admission } from "./Admission";
 export { default as ContactForm } from "./ContactForm";
 // Auth

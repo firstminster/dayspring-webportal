@@ -7,6 +7,7 @@ import {
   Home,
   About,
   Gallery,
+  Blog,
   Admission,
   ContactForm,
   Login,
@@ -27,6 +28,7 @@ const WebRoutes = () => {
         {/* Web */}
         <Route path="/about" element={<About />} />
         <Route path="/gallery" element={<Gallery />} />
+        <Route path="/blogs" element={<Blog />} />
         <Route path="/admission" element={<Admission />} />
         <Route path="/contact" element={<ContactForm />} />
       </Routes>

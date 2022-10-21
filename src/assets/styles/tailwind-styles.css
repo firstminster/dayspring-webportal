@@ -7,7 +7,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 
 /* Custom utility classes */
-
+/* ================== */
 /* Button */
 .btn {
   @apply flex w-full justify-center rounded-md border border-transparent bg-blue-primary py-2 px-4 text-sm font-medium text-white shadow-sm hover:bg-medium-orchid focus:outline-none focus:ring-0 focus:ring-blue-primary focus:ring-offset-2 transition-all duration-300 ease-out;
@@ -15,13 +15,5 @@
 
 /* Navigation bar */
 .nav-menu {
-  @apply h-[390px] w-[183px] lg:h-auto lg:w-auto lg:static flex flex-col p-4 mt-4 z-10 bg-white rounded-b-[10px] border border-gray-100 lg:flex-row space-y-[22px] lg:space-y-0 lg:space-x-9 md:mt-0 text-lg lg:text-[15px] xl:text-lg md:font-normal lg:border-0  lg:bg-transparent;
-}
-
-.nav-menu.active {
-  @apply absolute top-[55px] md:top-[69px] right-0 transition-all duration-500 ease-in-out;
-}
-
-.nav-menu.inactive {
-  @apply absolute top-0 -right-[100%] transition-all duration-500 ease-in-out;
+  @apply h-[390px] w-[183px] lg:h-auto lg:w-auto lg:static flex flex-col p-4 mt-4 z-30 bg-white rounded-b-[10px] border border-gray-100 lg:flex-row space-y-[22px] lg:space-y-0 lg:space-x-9 md:mt-0 text-lg lg:text-[15px] xl:text-lg md:font-normal lg:border-0 lg:bg-transparent;
 }
