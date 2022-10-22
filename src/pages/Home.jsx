@@ -1,9 +1,12 @@
 import React from "react";
+import { Slider } from "../components";
 
 function Home() {
   return (
-    <section className="container relative">
-      <div className="absolute top-[100px]">Home</div>
+    <section className=" relative mx-auto">
+      <div className="absolute top-[95px] flex items-center justify-center ">
+        <Slider />
+      </div>
     </section>
   );
 }
