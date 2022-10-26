@@ -57,8 +57,8 @@ const Slider = () => {
   return (
     // slider
     <div className="overflow-hidden w-screen">
-      <AiOutlineArrowLeft className="arrow prev" onClick={prevSlide} />
-      <AiOutlineArrowRight className="arrow next" onClick={nextSlide} />
+      <AiOutlineArrowLeft className="arrow prev z-40" onClick={prevSlide} />
+      <AiOutlineArrowRight className="arrow next z-40" onClick={nextSlide} />
       {sliderData.map((item, index) => {
         const { _id, title, desc, bgColor, bgImage } = item;
         return (

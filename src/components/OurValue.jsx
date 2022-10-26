@@ -9,7 +9,11 @@ import {
 const OurValue = () => {
   return (
     <div className="container mx-auto">
-      <img src={spiralArrowImg} alt="" className="" />
+      <img
+        src={spiralArrowImg}
+        alt="spiral-arrow"
+        className="absolute top-[95rem] xl:left-[15rem]  2xl:left-[25rem] h-auto w-[250px] object-contain"
+      />
       <div className="absolute top-[99rem] inset-x-0 flex flex-col items-center justify-between ">
         <h1 className="text-[32px] font-semibold mb-[49px]">Our Values</h1>
         <div className="flex items-start justify-center ">
