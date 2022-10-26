@@ -23,6 +23,8 @@ module.exports = {
         "green-pantone": "#27AE48",
         honeydew: "#E0EFE6",
         "medium-orchid": "#B14AED",
+        "rusty-red": "#D83246",
+        "jungle-green": "#00B18A",
       },
       fontFamily: {
         sans: ["Work Sans"],

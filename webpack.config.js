@@ -1,5 +1,6 @@
 const HtmlWebpackPlugin = require("html-webpack-plugin");
 const path = require("path");
+// const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 
 module.exports = {
   mode: "development",
@@ -22,7 +23,7 @@ module.exports = {
     historyApiFallback: true,
   },
   resolve: {
-    extensions: [".js", ".jsx", ".json"],
+    extensions: ["*", ".js", ".jsx", ".json"],
   },
   module: {
     rules: [
@@ -34,11 +35,12 @@ module.exports = {
       {
         test: /\.css$/i,
         use: ["style-loader", "css-loader", "postcss-loader"],
+        // use: [MiniCssExtractPlugin.loader, "css-loader"],
       },
-      {
-        test: /\.(s(a|c)ss)$/,
-        use: ["style-loader", "css-loader", "sass-loader"],
-      },
+      // {
+      //   test: /\.(s(a|c)ss)$/,
+      //   use: [MiniCssExtractPlugin.loader, "css-loader", "sass-loader"],
+      // },
       {
         test: /\.(png|jpe?g|gif|svg)$/i,
         type: "asset/resource",
@@ -49,5 +51,6 @@ module.exports = {
     new HtmlWebpackPlugin({
       template: path.join(__dirname, "public", "index.html"),
     }),
+    // new MiniCssExtractPlugin(),
   ],
 };

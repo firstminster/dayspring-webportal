@@ -69,6 +69,7 @@
     "babel-loader": "^8.2.5",
     "chokidar-cli": "^3.0.0",
     "concurrently": "^7.4.0",
+    "mini-css-extract-plugin": "^2.6.1",
     "node-sass": "^7.0.3",
     "postcss": "^8.4.17",
     "postcss-cli": "^10.0.0",

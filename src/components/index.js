@@ -1,7 +1,9 @@
 // Web > Navbar
 export { default as Navbar } from "./navigation/navbar/Navbar";
-// Web > Home > Slider
+// Web > Home
 export { default as Slider } from "./Slider";
+export { default as WhyChooseUs } from "./WhyChooseUs";
+export { default as OurValue } from "./OurValue";
 // Admin
 export { default as AdminHome } from "./dashboards/adminDashboard/AdminHome";
 export { default as AdminProfile } from "./dashboards/adminDashboard/Profile";
