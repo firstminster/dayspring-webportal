@@ -10,8 +10,13 @@ export { default as disciplineImg } from "../assets/img/discipline.png";
 export { default as acaCompImg } from "../assets/img/academic-competence.png";
 export { default as leadershipImg } from "../assets/img/leadership.png";
 export { default as spiralArrowImg } from "../assets/img/spiral-arrow.png";
-// Bg-image
+export { default as teacherArrowImg } from "../assets/img/teacher-arrow.png";
+export { default as facilityArrowImg } from "../assets/img/facility-arrow.png";
+// image
 export { default as HeroBgImg } from "../assets/img/Hero-gradient-bg.png";
 export { default as appleImg } from "../assets/img/appleImg.jpeg";
 export { default as purpleShelvesImg } from "../assets/img/purpleShelvesImg.jpeg";
 export { default as diverseKidsImg } from "../assets/img/diverse-kids-reading-books.png";
+export { default as metricsImg } from "../assets/img/metrics-bg.png";
+export { default as teacherImg } from "../assets/img/teacher.png";
+export { default as facilityImg } from "../assets/img/facility.png";

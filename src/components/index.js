@@ -4,6 +4,8 @@ export { default as Navbar } from "./navigation/navbar/Navbar";
 export { default as Slider } from "./Slider";
 export { default as WhyChooseUs } from "./WhyChooseUs";
 export { default as OurValue } from "./OurValue";
+export { default as Metrics } from "./Metrics";
+export { default as TeachersAndFacilities } from "./TeachersAndFacilities";
 // Admin
 export { default as AdminHome } from "./dashboards/adminDashboard/AdminHome";
 export { default as AdminProfile } from "./dashboards/adminDashboard/Profile";

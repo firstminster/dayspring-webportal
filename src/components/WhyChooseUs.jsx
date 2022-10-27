@@ -11,10 +11,10 @@ const WhyChooseUs = () => {
         <img
           src={diverseKidsImg}
           alt="why-choose-us"
-          className="w-[531px] h-[590px] object-cover rounded-lg"
+          className="w-[500px] h-[565px] object-cover rounded-lg"
         />
         <div className=" ml-[53px] ">
-          <h2 className="text-[32px] font-semibold text-rusty-red mb-[41px] ">
+          <h2 className="text-[32px] font-semibold text-rusty-red mb-[25px] ">
             Why Choose Us?
           </h2>
           <div className="flex items-center">

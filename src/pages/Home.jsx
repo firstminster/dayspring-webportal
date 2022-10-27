@@ -1,5 +1,11 @@
 import React from "react";
-import { OurValue, Slider, WhyChooseUs } from "../components";
+import {
+  Metrics,
+  OurValue,
+  Slider,
+  TeachersAndFacilities,
+  WhyChooseUs,
+} from "../components";
 
 function Home() {
   return (
@@ -7,6 +13,8 @@ function Home() {
       <Slider />
       <WhyChooseUs />
       <OurValue />
+      <Metrics />
+      <TeachersAndFacilities />
     </section>
   );
 }
