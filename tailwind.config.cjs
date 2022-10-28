@@ -27,6 +27,7 @@ module.exports = {
         "jungle-green": "#00B18A",
         "gray-x-11-gray": "#BDBDBD",
         "light-sky-blue": "#99D5FF",
+        "quick-silver": "#A0A0A0",
       },
       fontFamily: {
         sans: ["Work Sans"],

@@ -1,5 +1,6 @@
 // Dayspring-logo
 export { default as dayspringLogo } from "../assets/img/dayspring-logo-blue.png";
+export { default as dayspringLogoBlueBg } from "../assets/img/dayspring-logo-blue-bg.png";
 // Stickers
 export { default as girlImg } from "../assets/img/girl.png";
 export { default as booksImg } from "../assets/img/books.png";
@@ -12,6 +13,8 @@ export { default as leadershipImg } from "../assets/img/leadership.png";
 export { default as spiralArrowImg } from "../assets/img/spiral-arrow.png";
 export { default as teacherArrowImg } from "../assets/img/teacher-arrow.png";
 export { default as facilityArrowImg } from "../assets/img/facility-arrow.png";
+export { default as patternDoodleBlackImg } from "../assets/img/Pattern-doodle-black.png";
+export { default as patternDoodleWhiteImg } from "../assets/img/Pattern-doodle-white.png";
 // image
 export { default as HeroBgImg } from "../assets/img/Hero-gradient-bg.png";
 export { default as appleImg } from "../assets/img/appleImg.jpeg";

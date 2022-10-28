@@ -18,6 +18,7 @@ const Metrics = () => {
           <p className="text-lg font-light">Success Rate</p>
         </div>
       </div>
+      {/* bg-image */}
       <img
         src={metricsImg}
         alt="metrics-bg"

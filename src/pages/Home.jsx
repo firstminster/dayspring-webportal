@@ -1,6 +1,8 @@
 import React from "react";
 import {
   Blog,
+  CallToAction,
+  Footer,
   Metrics,
   OurValue,
   Slider,
@@ -11,7 +13,7 @@ import {
 
 function Home() {
   return (
-    <section className="relative mx-auto ">
+    <section className="relative ">
       <Slider />
       <WhyChooseUs />
       <OurValue />
@@ -19,6 +21,10 @@ function Home() {
       <TeachersAndFacilities />
       <Blog />
       <UpcomingEvents />
+      <CallToAction />
+      <div className="absolute top-[305rem] inset-x-0">
+        <Footer />
+      </div>
     </section>
   );
 }

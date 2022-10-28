@@ -1,7 +1,6 @@
 import React from "react";
 import { FaArrowLeft, FaArrowRight } from "react-icons/fa";
 import { BiTime } from "react-icons/bi";
-import { GrLocation } from "react-icons/gr";
 import { HiOutlineLocationMarker } from "react-icons/hi";
 
 const UpcomingEvents = () => {
@@ -22,7 +21,7 @@ const UpcomingEvents = () => {
       </div>
       <div className="container mx-auto flex flex-col items-center overflow-scroll scrollbar-hide p-3 ">
         {/* event-cards */}
-        <div className=" flex justify-center mt-[30px] pl-[400px] xl:pl-[200px]">
+        <div className=" flex justify-center mt-[30px] pl-[500px] 2xl:pl-[200px]">
           {/* card-1 */}
           <div className="bg-blue-primary w-[322px] h-[331px] rounded-2xl text-white mr-6 ">
             <div className="pl-10 pt-[34px]">
@@ -116,7 +115,7 @@ const UpcomingEvents = () => {
             </div>
           </div>
           {/* card-5 */}
-          {/* <div className="bg-light-sky-blue w-[322px] h-[331px] rounded-2xl text-black mr-6 ">
+          <div className="bg-light-sky-blue w-[322px] h-[331px] rounded-2xl text-black mr-6 ">
             <div className="pl-10 pt-[34px]">
               <h1 className="text-6xl font-semibold ">20th</h1>
               <p className="text-lg">Tuesday</p>
@@ -137,7 +136,7 @@ const UpcomingEvents = () => {
                 <p className="ml-[24px] block">Environment</p>
               </div>
             </div>
-          </div> */}
+          </div>
           {/* card-6 */}
           {/* <div className="bg-light-sky-blue w-[322px] h-[331px] rounded-2xl text-black mr-6 ">
             <div className="pl-10 pt-[34px]">

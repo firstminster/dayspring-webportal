@@ -1,5 +1,6 @@
-// Web > Navbar
+// Web > Common
 export { default as Navbar } from "./navigation/navbar/Navbar";
+export { default as Footer } from "./footer/Footer";
 // Web > Home
 export { default as Slider } from "./home/Slider";
 export { default as WhyChooseUs } from "./home/WhyChooseUs";
@@ -8,6 +9,7 @@ export { default as Metrics } from "./home/Metrics";
 export { default as TeachersAndFacilities } from "./home/TeachersAndFacilities";
 export { default as Blog } from "./home/Blog";
 export { default as UpcomingEvents } from "./home/UpcomingEvents";
+export { default as CallToAction } from "./home/CallToAction";
 // Admin
 export { default as AdminHome } from "./dashboards/adminDashboard/AdminHome";
 export { default as AdminProfile } from "./dashboards/adminDashboard/Profile";
