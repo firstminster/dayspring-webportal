@@ -6,21 +6,11 @@ import {
   facilityImg,
   teacherArrowImg,
   teacherImg,
-} from "../assets/importAssets";
+} from "../../assets/importAssets";
 
 const TeachersAndFacilities = () => {
   return (
     <div className="container mx-auto">
-      <img
-        src={teacherArrowImg}
-        alt="teacher"
-        className="absolute top-[150rem] xl:right-[12rem] 2xl:right-[20rem] h-[109px] w-[109px] object-contain"
-      />
-      <img
-        src={facilityArrowImg}
-        alt="teacher"
-        className="absolute top-[183rem] xl:left-[5rem] 2xl:left-[20rem] h-[109px] w-[109px] object-contain"
-      />
       <div className="absolute top-[150rem] inset-x-0">
         <div className="flex flex-col items-center">
           {/* teacher section */}
@@ -73,6 +63,16 @@ const TeachersAndFacilities = () => {
           </div>
         </div>
       </div>
+      <img
+        src={teacherArrowImg}
+        alt="teacher-arrow"
+        className="absolute top-[150rem] xl:right-[12rem] 2xl:right-[20rem] h-[109px] w-[109px] object-contain"
+      />
+      <img
+        src={facilityArrowImg}
+        alt="facility-arrow"
+        className="absolute top-[183rem] xl:left-[5rem] 2xl:left-[12rem] h-[109px] w-[109px] object-contain"
+      />
     </div>
   );
 };

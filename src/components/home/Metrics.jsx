@@ -1,5 +1,5 @@
 import React from "react";
-import { metricsImg } from "../assets/importAssets";
+import { metricsImg } from "../../assets/importAssets";
 
 const Metrics = () => {
   return (
@@ -10,8 +10,6 @@ const Metrics = () => {
         className="h-[163px] w-full object-cover"
       />
       <div className="container mx-auto absolute inset-0 flex justify-center items-center text-white space-x-[169px] ">
-        {/* <div className=" "> */}
-        {/* <div className="flex justify-center items-center"> */}
         <div className="text-center">
           <h2 className="text-[40px] font-semibold -mb-3">5000+</h2>
           <p className="text-lg font-light ">Alumnis</p>
@@ -24,8 +22,6 @@ const Metrics = () => {
           <h2 className="text-[40px] font-semibold -mb-3">90%</h2>
           <p className="text-lg font-light">Success Rate</p>
         </div>
-        {/* </div> */}
-        {/* </div> */}
       </div>
     </div>
   );

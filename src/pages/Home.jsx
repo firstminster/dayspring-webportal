@@ -1,5 +1,6 @@
 import React from "react";
 import {
+  Blog,
   Metrics,
   OurValue,
   Slider,
@@ -15,6 +16,7 @@ function Home() {
       <OurValue />
       <Metrics />
       <TeachersAndFacilities />
+      <Blog />
     </section>
   );
 }

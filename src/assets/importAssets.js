@@ -20,3 +20,6 @@ export { default as diverseKidsImg } from "../assets/img/diverse-kids-reading-bo
 export { default as metricsImg } from "../assets/img/metrics-bg.png";
 export { default as teacherImg } from "../assets/img/teacher.png";
 export { default as facilityImg } from "../assets/img/facility.png";
+export { default as learningImg } from "../assets/img/learning.png";
+export { default as parentsImg } from "../assets/img/parents.png";
+export { default as allWorkImg } from "../assets/img/all-work-no-play.png";

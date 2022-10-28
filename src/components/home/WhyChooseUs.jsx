@@ -1,5 +1,5 @@
 import React from "react";
-import { diverseKidsImg } from "../assets/importAssets";
+import { diverseKidsImg } from "../../assets/importAssets";
 
 const WhyChooseUs = () => {
   return (

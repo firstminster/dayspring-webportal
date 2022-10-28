@@ -4,7 +4,7 @@ import {
   disciplineImg,
   leadershipImg,
   spiralArrowImg,
-} from "../assets/importAssets";
+} from "../../assets/importAssets";
 
 const OurValue = () => {
   return (

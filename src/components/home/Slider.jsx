@@ -11,8 +11,8 @@ import {
   calculatorImg,
   globeImg,
   purpleShelvesImg,
-} from "../assets/importAssets.js";
-import { sliderData } from "../data/WebData";
+} from "../../assets/importAssets";
+import { sliderData } from "../../data/WebData";
 
 // initialize timer
 // const delay = 500;
