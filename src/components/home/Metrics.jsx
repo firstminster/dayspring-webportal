@@ -4,11 +4,6 @@ import { metricsImg } from "../../assets/importAssets";
 const Metrics = () => {
   return (
     <div className="absolute top-[135rem] inset-x-0 ">
-      <img
-        src={metricsImg}
-        alt="metrics-bg"
-        className="h-[163px] w-full object-cover"
-      />
       <div className="container mx-auto absolute inset-0 flex justify-center items-center text-white space-x-[169px] ">
         <div className="text-center">
           <h2 className="text-[40px] font-semibold -mb-3">5000+</h2>
@@ -23,6 +18,11 @@ const Metrics = () => {
           <p className="text-lg font-light">Success Rate</p>
         </div>
       </div>
+      <img
+        src={metricsImg}
+        alt="metrics-bg"
+        className="h-[163px] w-full object-cover"
+      />
     </div>
   );
 };

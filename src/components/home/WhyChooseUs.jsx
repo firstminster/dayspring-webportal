@@ -3,11 +3,11 @@ import { diverseKidsImg } from "../../assets/importAssets";
 
 const WhyChooseUs = () => {
   return (
-    <div className="container mx-auto ">
-      <div
-        className="absolute top-[55rem] inset-x-0
-       flex items-center justify-center "
-      >
+    <div
+      className="absolute top-[55rem] inset-x-0
+        flex items-center justify-center "
+    >
+      <div className="container mx-auto flex items-center justify-center">
         <img
           src={diverseKidsImg}
           alt="why-choose-us"

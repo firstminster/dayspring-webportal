@@ -7,6 +7,7 @@ export { default as OurValue } from "./home/OurValue";
 export { default as Metrics } from "./home/Metrics";
 export { default as TeachersAndFacilities } from "./home/TeachersAndFacilities";
 export { default as Blog } from "./home/Blog";
+export { default as UpcomingEvents } from "./home/UpcomingEvents";
 // Admin
 export { default as AdminHome } from "./dashboards/adminDashboard/AdminHome";
 export { default as AdminProfile } from "./dashboards/adminDashboard/Profile";

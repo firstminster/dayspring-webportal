@@ -25,11 +25,17 @@ module.exports = {
         "medium-orchid": "#B14AED",
         "rusty-red": "#D83246",
         "jungle-green": "#00B18A",
+        "gray-x-11-gray": "#BDBDBD",
+        "light-sky-blue": "#99D5FF",
       },
       fontFamily: {
         sans: ["Work Sans"],
       },
     },
   },
-  plugins: [require("@tailwindcss/forms"), require("flowbite/plugin")],
+  plugins: [
+    require("tailwind-scrollbar-hide"),
+    require("@tailwindcss/forms"),
+    require("flowbite/plugin"),
+  ],
 };

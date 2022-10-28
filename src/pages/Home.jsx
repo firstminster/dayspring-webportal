@@ -5,18 +5,20 @@ import {
   OurValue,
   Slider,
   TeachersAndFacilities,
+  UpcomingEvents,
   WhyChooseUs,
 } from "../components";
 
 function Home() {
   return (
-    <section className=" relative mx-auto">
+    <section className="relative mx-auto ">
       <Slider />
       <WhyChooseUs />
       <OurValue />
       <Metrics />
       <TeachersAndFacilities />
       <Blog />
+      <UpcomingEvents />
     </section>
   );
 }

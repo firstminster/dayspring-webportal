@@ -10,15 +10,15 @@ import {
 
 const TeachersAndFacilities = () => {
   return (
-    <div className="container mx-auto">
-      <div className="absolute top-[150rem] inset-x-0">
+    <div className="absolute top-[150rem] inset-x-0">
+      <div className="container mx-auto">
         <div className="flex flex-col items-center">
           {/* teacher section */}
-          <div className="flex items-center">
+          <div className="flex flex-wrap items-center justify-center">
             <img
               src={teacherImg}
               alt="teacher"
-              className="w-[480px] h-[480px] object-cover"
+              className="w-[480px] h-[480px] object-contain"
             />
             <div className="ml-[37px]">
               <h2 className="font-medium text-4xl">
@@ -40,8 +40,8 @@ const TeachersAndFacilities = () => {
             </div>
           </div>
           {/* facility section */}
-          <div className="flex items-center mt-[63px]">
-            <div className="mr-[37px]">
+          <div className="flex flex-wrap-reverse items-center mt-[63px] justify-center ">
+            <div className=" mr-[37px]">
               <h2 className="font-medium text-4xl">
                 Modern and excellent
                 <span className="block">school facilities</span>
@@ -59,19 +59,23 @@ const TeachersAndFacilities = () => {
                 <FaArrowRight className="w-[13.54px] h-[11.89px]" />
               </NavLink>
             </div>
-            <img src={facilityImg} alt="facility" className="" />
+            <img
+              src={facilityImg}
+              alt="facility"
+              className="w-[480px] h-[480px] object-contain"
+            />
           </div>
         </div>
       </div>
       <img
         src={teacherArrowImg}
         alt="teacher-arrow"
-        className="absolute top-[150rem] xl:right-[12rem] 2xl:right-[20rem] h-[109px] w-[109px] object-contain"
+        className="invisible xl:visible absolute top-[0rem] xl:right-[12rem] 2xl:right-[20rem] h-[109px] w-[109px] object-contain"
       />
       <img
         src={facilityArrowImg}
         alt="facility-arrow"
-        className="absolute top-[183rem] xl:left-[5rem] 2xl:left-[12rem] h-[109px] w-[109px] object-contain"
+        className="invisible xl:visible absolute top-[33rem] xl:left-[5rem] 2xl:left-[12rem] h-[109px] w-[109px] object-contain"
       />
     </div>
   );
