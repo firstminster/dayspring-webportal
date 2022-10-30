@@ -58,15 +58,23 @@ const Slider = () => {
             // background-image
             <div
               key={_id}
-              className={`h-[684px] w-screen  ${bgColor} inline-block`}
+              className={` h-[750px] w-full lg:h-[684px] lg:w-screen  ${bgColor} inline-block`}
             />
           );
         })}
       </div>
       {/* slider-content */}
-      <div className=" absolute top-[90px] inset-x-0">
+      <div className=" absolute top-[35px] lg:top-[90px] inset-x-0">
         {sliderData.map((item, idx) => {
-          const { _id, title, desc, bgColor, bgImage } = item;
+          const {
+            _id,
+            title,
+            titleMobile,
+            desc,
+            descMobile,
+            bgColor,
+            bgImage,
+          } = item;
           return (
             <div
               key={_id}
@@ -77,13 +85,25 @@ const Slider = () => {
             >
               {idx === currentSlide ? (
                 // slider-content
-                <div className=" flex items-center justify-center">
-                  <div className="text-white animate-fade-in-right">
-                    <h1 className="text-6xl w-[647px] font-semibold">
+                <div className="flex flex-col lg:flex-row items-center justify-center">
+                  <div className="text-white text-center lg:text-start  lg:animate-fade-in-right">
+                    {/* mobile-view */}
+                    <h1 className=" lg:hidden text-3xl lg:text-6xl w-[261px] lg:w-[647px] font-semibold animate-fade-in-down lg:animate-none">
+                      {titleMobile}
+                    </h1>
+                    {/* desktop-view */}
+                    <h1 className="hidden lg:block text-3xl lg:text-4xl xl:text-6xl w-[281px] lg:w-[390px] xl:w-[647px] font-semibold">
                       {title}
                     </h1>
-                    <p className="mt-[31px] w-[585px] text-2xl">{desc}</p>{" "}
-                    <button className="flex items-center text-black justify-center bg-white w-[238px] h-[49px] px-[55.5px] py-[14px] mt-[35px] rounded-full border hover:border-medium-orchid hover:text-medium-orchid transition-all duration-300 ease-out ">
+                    {/* mobile-view */}
+                    <p className="lg:hidden mt-[20px] lg:mt-[31px] w-[261px] lg:w-[585px] text-base lg:text-2xl animate-fade-in-down lg:animate-none">
+                      {descMobile}
+                    </p>{" "}
+                    {/* desktop-view */}
+                    <p className="hidden lg:block mt-[31px] w-[213px] lg:w-[380px] xl:w-[585px] text-base xl:text-2xl">
+                      {desc}
+                    </p>{" "}
+                    <button className="absolute top-[37rem] inset-y-0 lg:static flex items-center text-black justify-center bg-white w-[238px] h-[49px] px-[55.5px] py-[14px] mt-[35px] rounded-full border hover:border-medium-orchid hover:text-medium-orchid transition-all duration-300 ease-out animate-fade-in-up lg:animate-none">
                       <span className="mr-[11px] text-lg"> Learn More</span>
                       <FaArrowRight className="w-[13.54px] h-[11.89px]" />
                     </button>
@@ -92,7 +112,7 @@ const Slider = () => {
                   <img
                     src={girlImg}
                     alt="little-girl"
-                    className="h-[500px] w-auto ml-[94px] animate-fade-in-down"
+                    className="mt-[33px] h-[384px] w-[289px] lg:h-[450px] lg:w-[350px] xl:h-[500px] xl:w-auto lg:ml-[94px] animate-fade-in-right lg:animate-fade-in-down"
                   />
                 </div>
               ) : null}
@@ -102,11 +122,11 @@ const Slider = () => {
       </div>
 
       {/* slider-buttons */}
-      <div className="absolute top-[40rem] inset-x-0 text-center">
+      <div className="absolute top-[45rem] lg:top-[40rem] right-0 lg:inset-x-0 text-center">
         {sliderData.map((_, idx) => (
           <div
             key={idx}
-            className={`w-3 h-3 rounded-full cursor-pointer inline-block m-2 ${
+            className={` w-2 h-2 lg:w-3 lg:h-3 rounded-full cursor-pointer inline-block m-1 lg:m-2 ${
               currentSlide === idx ? " bg-blue-primary" : "bg-white"
             }`}
             onClick={() => {

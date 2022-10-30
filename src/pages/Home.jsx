@@ -15,7 +15,7 @@ function Home() {
   return (
     <>
       <section className="relative ">
-        <div className="absolute top-[95px] inset-x-0">
+        <div className="absolute top-[75px] lg:top-[95px] inset-x-0">
           <Slider />
         </div>
         <WhyChooseUs />

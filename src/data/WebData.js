@@ -24,16 +24,20 @@ export const sliderData = [
     _id: 1,
     title: "Help your child become the best version of themselves",
     desc: "We are raising a community of spiritually-led kids who are academically sound, uniquely talented and have the capacity to shine anywhere they go.",
-    button: "Learn More",
+    titleMobile: "Investing in your child’s future starts here",
+    descMobile: "Developing a better system to educate your kids",
     image: girlImg,
     bgColor:
       "bg-gradient-to-r from-blue-primary via-medium-slate-blue to-medium-orchid",
     bgImage: HeroBgImg,
+    button: "Learn More",
   },
   {
     _id: 2,
     title: "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
     desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore praesentium maiores a, blanditiis asperiores natus ducimus sit, facere ",
+    titleMobile: "Investing in your child’s future starts here",
+    descMobile: "Developing a better system to educate your kids",
     button: "Learn More",
     image: girlImg,
     bgColor:
@@ -44,6 +48,8 @@ export const sliderData = [
     _id: 3,
     title: "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
     desc: "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Inventore fugiat, nesciunt aliquid sapiente minus corrupti magni consectetur, optio  ",
+    titleMobile: "Investing in your child’s future starts here",
+    descMobile: "Developing a better system to educate your kids",
     button: "Learn More",
     image: girlImg,
     bgColor:
@@ -54,6 +60,8 @@ export const sliderData = [
     _id: 4,
     title: "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
     desc: "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Inventore fugiat, nesciunt aliquid sapiente minus corrupti magni consectetur, optio  ",
+    titleMobile: "Investing in your child’s future starts here",
+    descMobile: "Developing a better system to educate your kids",
     button: "Learn More",
     image: girlImg,
     bgColor:
