@@ -32,6 +32,32 @@ module.exports = {
       fontFamily: {
         sans: ["Work Sans"],
       },
+      keyframes: {
+        "fade-in-right": {
+          "0%": {
+            opacity: "0",
+            transform: "translateX(-60px)",
+          },
+          "100%": {
+            opacity: "1",
+            transform: "translateX(0)",
+          },
+        },
+        "fade-in-down": {
+          "0%": {
+            opacity: "0",
+            transform: "translateY(-60px)",
+          },
+          "100%": {
+            opacity: "1",
+            transform: "translateY(0)",
+          },
+        },
+      },
+      animation: {
+        "fade-in-right": "fade-in-right 1.5s ease-in-out",
+        "fade-in-down": "fade-in-down 1.5s ease-in-out",
+      },
     },
   },
   plugins: [

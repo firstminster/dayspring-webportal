@@ -19,9 +19,9 @@ const UpcomingEvents = () => {
           </button>
         </div>
       </div>
-      <div className="container mx-auto flex flex-col items-center overflow-scroll scrollbar-hide p-3 ">
+      <div className="max-w-7xl mx-auto flex flex-col items-center overflow-scroll scrollbar-hide p-3">
         {/* event-cards */}
-        <div className=" flex justify-center mt-[30px] pl-[500px] 2xl:pl-[200px]">
+        <div className=" flex justify-center mt-[30px] pl-[510px]">
           {/* card-1 */}
           <div className="bg-blue-primary w-[322px] h-[331px] rounded-2xl text-white mr-6 ">
             <div className="pl-10 pt-[34px]">

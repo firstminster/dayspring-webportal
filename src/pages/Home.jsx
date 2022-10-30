@@ -13,19 +13,23 @@ import {
 
 function Home() {
   return (
-    <section className="relative ">
-      <Slider />
-      <WhyChooseUs />
-      <OurValue />
-      <Metrics />
-      <TeachersAndFacilities />
-      <Blog />
-      <UpcomingEvents />
-      <CallToAction />
-      <div className="absolute top-[305rem] inset-x-0">
-        <Footer />
-      </div>
-    </section>
+    <>
+      <section className="relative ">
+        <div className="absolute top-[95px] inset-x-0">
+          <Slider />
+        </div>
+        <WhyChooseUs />
+        <OurValue />
+        <Metrics />
+        <TeachersAndFacilities />
+        <Blog />
+        <UpcomingEvents />
+        <CallToAction />
+        <div className="absolute top-[305rem] inset-x-0">
+          <Footer />
+        </div>
+      </section>
+    </>
   );
 }
 
