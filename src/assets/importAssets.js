@@ -16,6 +16,7 @@ export { default as facilityArrowImg } from "../assets/img/facility-arrow.png";
 export { default as patternDoodleBlackImg } from "../assets/img/Pattern-doodle-black.png";
 export { default as patternDoodleWhiteImg } from "../assets/img/Pattern-doodle-white.png";
 export { default as patternDoodleWhiteMobileImg } from "../assets/img/pattern-doodle-white-mobile.png";
+export { default as patternDoodleWhiteMetricsMobileImg } from "../assets/img/pattern-doodle-white-metrics-mobile.png";
 // image
 export { default as HeroBgImg } from "../assets/img/Hero-gradient-bg.png";
 export { default as appleImg } from "../assets/img/appleImg.jpeg";

@@ -15,7 +15,7 @@ import {
 import { sliderData } from "../../data/WebData";
 import { useRef } from "react";
 
-const colors = [{ blu: "#0088FE" }, { gren: "#00C49F" }, { yell: "#FFBB28" }];
+// const colors = [{ blu: "#0088FE" }, { gren: "#00C49F" }, { yell: "#FFBB28" }];
 // initialize timer
 const delay = 5000;
 
@@ -35,7 +35,7 @@ const Slider = () => {
     timeoutRef.current = setTimeout(
       () =>
         setCurrentSlide((prevIndex) =>
-          prevIndex === colors.length - 1 ? 0 : prevIndex + 1
+          prevIndex === sliderData.length - 1 ? 0 : prevIndex + 1
         ),
       delay
     );
@@ -47,7 +47,7 @@ const Slider = () => {
 
   return (
     // slide-show
-    <div className=" overflow-hidden  ">
+    <div className=" overflow-hidden">
       <div
         className={`whitespace-nowrap transition-all duration-1000 ease-in-out `}
         style={{ transform: `translate3d(${-currentSlide * 100}%, 0, 0)` }}
@@ -58,7 +58,7 @@ const Slider = () => {
             // background-image
             <div
               key={_id}
-              className={` h-[750px] w-full lg:h-[684px] lg:w-screen  ${bgColor} inline-block`}
+              className={` h-[880px] w-full lg:h-[684px] lg:w-screen  ${bgColor} inline-block`}
             />
           );
         })}
@@ -88,22 +88,22 @@ const Slider = () => {
                 <div className="flex flex-col lg:flex-row items-center justify-center">
                   <div className="text-white text-center lg:text-start  lg:animate-fade-in-right">
                     {/* mobile-view */}
-                    <h1 className=" lg:hidden text-3xl lg:text-6xl w-[261px] lg:w-[647px] font-semibold animate-fade-in-down lg:animate-none">
+                    {/* <h1 className=" hidden text-3xl lg:text-6xl w-[261px] lg:w-[647px] font-semibold animate-fade-in-down lg:animate-none">
                       {titleMobile}
-                    </h1>
+                    </h1> */}
                     {/* desktop-view */}
-                    <h1 className="hidden lg:block text-3xl lg:text-4xl xl:text-6xl w-[281px] lg:w-[390px] xl:w-[647px] font-semibold">
+                    <h1 className="block text-3xl lg:text-4xl xl:text-6xl w-[261px] lg:w-[390px] xl:w-[647px] font-semibold animate-fade-in-down lg:animate-none">
                       {title}
                     </h1>
                     {/* mobile-view */}
-                    <p className="lg:hidden mt-[20px] lg:mt-[31px] w-[261px] lg:w-[585px] text-base lg:text-2xl animate-fade-in-down lg:animate-none">
+                    {/* <p className="hidden mt-[20px] lg:mt-[31px] w-[261px] lg:w-[585px] text-base lg:text-2xl animate-fade-in-down lg:animate-none">
                       {descMobile}
-                    </p>{" "}
+                    </p>{" "} */}
                     {/* desktop-view */}
-                    <p className="hidden lg:block mt-[31px] w-[213px] lg:w-[380px] xl:w-[585px] text-base xl:text-2xl">
+                    <p className="block mt-[31px] w-[261px] lg:w-[380px] xl:w-[585px] text-base xl:text-2xl animate-fade-in-down lg:animate-none">
                       {desc}
                     </p>{" "}
-                    <button className="absolute top-[37rem] inset-y-0 lg:static flex items-center text-black justify-center bg-white w-[238px] h-[49px] px-[55.5px] py-[14px] mt-[35px] rounded-full border hover:border-medium-orchid hover:text-medium-orchid transition-all duration-300 ease-out animate-fade-in-up lg:animate-none">
+                    <button className="absolute top-[45rem] inset-y-0 lg:static flex items-center text-black justify-center bg-white w-[238px] h-[49px] px-[55.5px] py-[14px] mt-[35px] rounded-full border hover:border-medium-orchid hover:text-medium-orchid transition-all duration-300 ease-out animate-fade-in-up lg:animate-none">
                       <span className="mr-[11px] text-lg"> Learn More</span>
                       <FaArrowRight className="w-[13.54px] h-[11.89px]" />
                     </button>
@@ -122,7 +122,7 @@ const Slider = () => {
       </div>
 
       {/* slider-buttons */}
-      <div className="absolute top-[45rem] lg:top-[40rem] right-0 lg:inset-x-0 text-center">
+      <div className="absolute top-[53rem] lg:top-[40rem] right-0 lg:inset-x-0 text-center">
         {sliderData.map((_, idx) => (
           <div
             key={idx}
