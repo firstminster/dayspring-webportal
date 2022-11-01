@@ -1,3 +1,5 @@
+import React from "react";
+
 // Website
 export { default as Home } from "./Home";
 export { default as About } from "./About";

@@ -20,10 +20,10 @@ function Home() {
       <WhyChooseUs />
       <OurValue />
       <Metrics />
-      {/* <TeachersAndFacilities />
+      <TeachersAndFacilities />
       <Blog />
       <UpcomingEvents />
-      <CallToAction /> */}
+      <CallToAction />
       <section className="absolute top-[305rem] inset-x-0">
         <Footer />
       </section>

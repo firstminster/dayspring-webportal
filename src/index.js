@@ -2,6 +2,7 @@ import React from "react";
 import ReactDOM from "react-dom/client";
 import App from "./App";
 import "./assets/styles/tailwind-styles.css";
+import "core-js/stable";
 
 // Custom CSS
 // import "./assets/styles/style.css";

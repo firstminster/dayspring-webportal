@@ -1,20 +1,24 @@
 const HtmlWebpackPlugin = require("html-webpack-plugin");
 const path = require("path");
+const BundleAnalyzerPlugin =
+  require("webpack-bundle-analyzer").BundleAnalyzerPlugin;
 // const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 
 module.exports = {
   mode: "development",
   entry: "./src/index.js",
   output: {
-    path: path.resolve(__dirname, "./dist"),
-    filename: "bundle.js",
+    filename: "[name].js",
+    chunkFilename: "[name].bundle.js",
     publicPath: "/",
+    path: path.resolve(__dirname, "dist"),
   },
-  target: "web",
+  target: ["web", "es5"],
   devServer: {
     port: "3000",
     static: {
-      directory: path.join(__dirname, "public"),
+      directory: path.resolve(__dirname, "dist"),
+      // directory: path.join(__dirname, "public"),
     },
     open: true,
     hot: true,
@@ -34,23 +38,41 @@ module.exports = {
       },
       {
         test: /\.css$/i,
+        include: path.resolve(__dirname, "src"),
         use: ["style-loader", "css-loader", "postcss-loader"],
         // use: [MiniCssExtractPlugin.loader, "css-loader"],
+      },
+      {
+        test: /\.(png|jpe?g|gif|svg)$/i,
+        type: "asset/resource",
       },
       // {
       //   test: /\.(s(a|c)ss)$/,
       //   use: [MiniCssExtractPlugin.loader, "css-loader", "sass-loader"],
       // },
-      {
-        test: /\.(png|jpe?g|gif|svg)$/i,
-        type: "asset/resource",
-      },
     ],
+  },
+  optimization: {
+    splitChunks: {
+      cacheGroups: {
+        reactVendor: {
+          test: /[\\/]node_modules[\\/](react|react-dom|react-router-dom)[\\/]/,
+          name: "vendor-react",
+          chunks: "all",
+        },
+        corejsVendor: {
+          test: /[\\/]node_modules[\\/](core-js)[\\/]/,
+          name: "vendor-corejs",
+          chunks: "all",
+        },
+      },
+    },
   },
   plugins: [
     new HtmlWebpackPlugin({
       template: path.join(__dirname, "public", "index.html"),
     }),
+    new BundleAnalyzerPlugin(),
     // new MiniCssExtractPlugin(),
   ],
 };

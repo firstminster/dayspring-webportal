@@ -1,7 +1,7 @@
-import React from "react";
+import React, { Suspense } from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 // Pages
-import { Login, ForgotPassword, ResetPassword, NotFound } from "../pages";
+import { NotFound } from "../pages";
 // Routers
 import { AdminRoutes, WebRoutes } from ".";
 
@@ -9,6 +9,7 @@ const RouterComponent = () => {
   return (
     <>
       <Router>
+        {/* <Suspense fallback={<div>Loading...</div>}> */}
         <Routes>
           {/* Website */}
           <Route path="/*" element={<WebRoutes />} />
@@ -18,6 +19,7 @@ const RouterComponent = () => {
           {/* NotFound */}
           <Route path="*" element={<NotFound />} />
         </Routes>
+        {/* </Suspense> */}
       </Router>
     </>
   );

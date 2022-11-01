@@ -17,7 +17,7 @@ import { useRef } from "react";
 
 // const colors = [{ blu: "#0088FE" }, { gren: "#00C49F" }, { yell: "#FFBB28" }];
 // initialize timer
-const delay = 5000;
+const delay = 2500;
 
 const Slider = () => {
   const [currentSlide, setCurrentSlide] = useState(0);
@@ -86,7 +86,7 @@ const Slider = () => {
               {idx === currentSlide ? (
                 // slider-content
                 <div className="flex flex-col lg:flex-row items-center justify-center">
-                  <div className="text-white text-center lg:text-start  lg:animate-fade-in-right">
+                  <div className="text-white text-center lg:text-left  lg:animate-fade-in-right">
                     {/* mobile-view */}
                     {/* <h1 className=" hidden text-3xl lg:text-6xl w-[261px] lg:w-[647px] font-semibold animate-fade-in-down lg:animate-none">
                       {titleMobile}

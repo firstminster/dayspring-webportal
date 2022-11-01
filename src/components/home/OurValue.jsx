@@ -37,7 +37,7 @@ const OurValue = () => {
               alt="academic-competence"
               className="h-[80px] w-[80px] lg:h-[110px] lg:w-[110px] object-cover"
             />
-            <h2 className="text-[16px] lg:text-2xl font-medium my-[17px]">
+            <h2 className="text-lg lg:text-2xl font-medium my-[17px]">
               Academic Competence
             </h2>
             <p className="w-[280px] h-[105px] text-sm lg:text-lg text-center">

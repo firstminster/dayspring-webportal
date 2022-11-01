@@ -1,8 +1,11 @@
+import React from "react";
+
 // Web > Common
 export { default as Navbar } from "./navigation/navbar/Navbar";
 export { default as Footer } from "./footer/Footer";
 // Web > Home
 export { default as Slider } from "./home/Slider";
+// export const Slider = React.lazy(() => import("./home/Slider"));
 export { default as WhyChooseUs } from "./home/WhyChooseUs";
 export { default as OurValue } from "./home/OurValue";
 export { default as Metrics } from "./home/Metrics";
