@@ -14,7 +14,7 @@ const WhyChooseUs = () => {
           className=" w-[301px] h-[340px] lg:w-[450px] lg:h-[550px] xl:w-[500px] xl:h-[575px] object-cover rounded-2xl "
         />
         <div className=" lg:ml-[53px] mt-[36px] lg:mt-0">
-          <h2 className="absolute -top-[3rem] inset-0 text-center lg:text-left lg:static text-[20px] lg:text-[32px] font-semibold text-rusty-red lg:mb-[10px] xl:mb-[20px] ">
+          <h2 className="absolute -top-[3rem] inset-x-0 text-center lg:text-left lg:static text-[20px] lg:text-[32px] font-semibold text-rusty-red lg:mb-[10px] xl:mb-[20px] ">
             Why Choose Us?
           </h2>
           <div className="flex items-center justify-center">

@@ -28,10 +28,10 @@ function Home() {
         <OurValue />
         <Metrics />
         <TeachersAndFacilities />
-        {/* <Blog />
+        <Blog />
         <UpcomingEvents />
-        <CallToAction /> */}
-        <section className="absolute top-[305rem] inset-x-0">
+        <CallToAction />
+        <section className="absolute top-[400rem] lg:top-[305rem] inset-x-0">
           <Footer />
         </section>
       </Suspense>

@@ -70,12 +70,12 @@ const TeachersAndFacilities = () => {
       <img
         src={teacherArrowImg}
         alt="teacher-arrow"
-        className="invisible xl:visible absolute top-[0rem] xl:right-[12rem] 2xl:right-[22rem] h-[109px] w-[109px] object-contain"
+        className="invisible xl:visible absolute top-0 right-[8rem] xl:right-[12rem] 2xl:right-[22rem] h-[109px] w-[109px] object-contain"
       />
       <img
         src={facilityArrowImg}
         alt="facility-arrow"
-        className="invisible xl:visible absolute top-[33rem] xl:left-[5rem] 2xl:left-[18rem] h-[109px] w-[109px] object-contain"
+        className="invisible xl:visible absolute top-[33rem] left-[2rem] xl:left-[5rem] 2xl:left-[18rem] h-[109px] w-[109px] object-contain"
       />
     </div>
   );
