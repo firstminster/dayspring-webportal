@@ -11,15 +11,15 @@ import {
   Admission,
   ContactForm,
   // Login,
-  ForgotPassword,
+  // ForgotPassword,
   ResetPassword,
 } from "../pages";
 
 // const Home = lazy(() => import("../pages/Home"));
 const Login = lazy(() =>
-  import(/*webpackChunkName: "home"*/ "../pages/auth/Login")
+  import(/*webpackChunkName: "Home"*/ "../pages/auth/Login")
 );
-// const ForgotPassword = lazy(() => import("../pages/auth/ForgotPassword"));
+const ForgotPassword = lazy(() => import("../pages/auth/ForgotPassword"));
 // const ResetPassword = lazy(() => import("../pages/auth/ResetPassword"));
 // const About = lazy(() => import("../pages/About"));
 // const Gallery = lazy(() => import("../pages/Gallery"));
@@ -31,7 +31,13 @@ const WebRoutes = () => {
   return (
     <>
       <Navbar />
-      <Suspense fallback={<div>Loading...</div>}>
+      <Suspense
+        fallback={
+          <div className="absolute top-[75px] lg:top-[95px] inset-x-0 text-2xl">
+            Loading...
+          </div>
+        }
+      >
         <Routes>
           <Route index path="/" element={<Home />} />
           {/* Auth */}

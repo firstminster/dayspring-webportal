@@ -10,7 +10,7 @@ import {
 
 const TeachersAndFacilities = () => {
   return (
-    <div className="absolute top-[150rem] inset-x-0">
+    <div className="absolute top-[208rem] sm:top-[195rem] lg:top-[150rem] inset-x-0">
       <div className="container mx-auto">
         <div className="flex flex-col items-center">
           {/* teacher section */}
@@ -18,21 +18,21 @@ const TeachersAndFacilities = () => {
             <img
               src={teacherImg}
               alt="teacher"
-              className="w-[480px] h-[480px] object-contain"
+              className=" w-[350px] h-[400px] lg:w-[480px] lg:h-[480px] object-fill rounded-2xl"
             />
-            <div className="ml-[37px]">
-              <h2 className="font-medium text-4xl">
-                Our teachers
-                <span className="block">are the best</span>
+            <div className="  md:ml-[37px]">
+              <h2 className="text-xl lg:text-4xl font-medium mt-[30px] lg:mt-0">
+                Our teachers{" "}
+                <span className="inline-block lg:block">are the best</span>
               </h2>
-              <p className="text-xl mt-[23px] w-[492px]">
+              <p className="text-sm lg:text-xl mt-[23px] w-[350px] lg:w-[492px]">
                 Our teachers share our passion for educational excellence and
                 are driven by the desire to develop students academically,
                 spiritually, physically and socially.
               </p>
               <NavLink
                 to="#"
-                className="flex items-center justify-center w-[238px] h-[49px] mr-[25px] px-[20px] py-[8px] mt-[23px] bg-blue-primary text-white text-sm xl:text-lg rounded-full hover:bg-medium-orchid transition-all duration-300 ease-out "
+                className="flex items-center justify-center w-[180px] h-[37px] lg:w-[238px] lg:h-[49px] mr-[25px] px-[20px] py-[8px] mt-[23px] bg-blue-primary text-white text-[16px] xl:text-lg rounded-full hover:bg-medium-orchid transition-all duration-300 ease-out "
               >
                 <span className="mr-[11px]">See More</span>
                 <FaArrowRight className="w-[13.54px] h-[11.89px]" />
@@ -41,19 +41,19 @@ const TeachersAndFacilities = () => {
           </div>
           {/* facility section */}
           <div className="flex flex-wrap-reverse items-center mt-[63px] justify-center ">
-            <div className=" mr-[37px]">
-              <h2 className="font-medium text-4xl">
-                Modern and excellent
-                <span className="block">school facilities</span>
+            <div className="md:mr-[37px]">
+              <h2 className=" text-xl lg:text-4xl font-medium mt-[30px] lg:mt-0">
+                Modern and excellent{" "}
+                <span className="inline-block lg:block">school facilities</span>
               </h2>
-              <p className="text-xl mt-[23px] w-[492px]">
+              <p className="text-sm lg:text-xl mt-[23px] w-[350px] lg:w-[492px]">
                 All of our facilities are designed to encourage innovative
                 teaching and improve the quality of education our students
                 receive.
               </p>
               <NavLink
                 to="#"
-                className="flex items-center justify-center w-[238px] h-[49px] mr-[25px] px-[20px] py-[8px] mt-[23px] bg-blue-primary text-white text-sm xl:text-lg rounded-full hover:bg-medium-orchid transition-all duration-300 ease-out "
+                className="flex items-center justify-center w-[180px] h-[37px] lg:w-[238px] lg:h-[49px] mr-[25px] px-[20px] py-[8px] mt-[23px] bg-blue-primary text-white text-[16px] xl:text-lg rounded-full hover:bg-medium-orchid transition-all duration-300 ease-out "
               >
                 <span className="mr-[11px]">See More</span>
                 <FaArrowRight className="w-[13.54px] h-[11.89px]" />
@@ -62,7 +62,7 @@ const TeachersAndFacilities = () => {
             <img
               src={facilityImg}
               alt="facility"
-              className="w-[480px] h-[480px] object-contain"
+              className="w-[350px] h-[400px] lg:w-[480px] lg:h-[480px] object-fill rounded-2xl"
             />
           </div>
         </div>
