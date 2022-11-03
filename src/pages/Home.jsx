@@ -13,7 +13,7 @@ import {
 
 function Home() {
   return (
-    <main className="relative ">
+    <main className="relative">
       <Suspense
         fallback={
           <div className="absolute top-[75px] lg:top-[95px] inset-x-0 text-2xl">
@@ -31,7 +31,7 @@ function Home() {
         <Blog />
         <UpcomingEvents />
         <CallToAction />
-        <section className="absolute top-[400rem] lg:top-[305rem] inset-x-0">
+        <section className="absolute top-[420rem] lg:top-[305rem] inset-x-0">
           <Footer />
         </section>
       </Suspense>
