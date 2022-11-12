@@ -6,6 +6,7 @@ import {
   Metrics,
   OurValue,
   Slider,
+  StudentsTestimonial,
   TeachersAndFacilities,
   UpcomingEvents,
   WhyChooseUs,
@@ -28,7 +29,8 @@ function Home() {
         <OurValue />
         <Metrics />
         <TeachersAndFacilities />
-        <Blog />
+        <StudentsTestimonial />
+        {/* <Blog /> */}
         <UpcomingEvents />
         <CallToAction />
         <section className="absolute top-[420rem] lg:top-[305rem] inset-x-0">

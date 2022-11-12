@@ -6,7 +6,7 @@ import { HiOutlineLocationMarker } from "react-icons/hi";
 const UpcomingEvents = () => {
   return (
     <div className="absolute top-[368rem] sm:top-[330rem] md:top-[308rem] lg:top-[253rem] inset-x-0">
-      <div className="flex justify-center items-center  ">
+      <div className="flex justify-center items-center">
         <h2 className="mr-[150px] lg:mr-[650px] xl:mr-[710px] font-semibold text-xl lg:text-[32px]">
           Upcoming Events
         </h2>
@@ -21,7 +21,7 @@ const UpcomingEvents = () => {
       </div>
       <div className="max-w-7xl mx-auto flex flex-col items-center overflow-scroll scrollbar-hide p-3">
         {/* event-cards */}
-        <div className="flex justify-center mt-[20px] lg:mt-[30px] pl-[45rem] md:pl-[750px] xl:pl-[510px]">
+        <div className="flex justify-center mt-[20px] lg:mt-[30px] pl-[45rem] md:pl-[250px] lg:pl-[750px] xl:pl-[510px]">
           {/* card-1 */}
           <div className="bg-blue-primary w-[218px] h-[197px] lg:w-[322px] lg:h-[331px] rounded-2xl text-white mr-6 ">
             <div className="pl-[24px] lg:pl-10 pt-[16px] lg:pt-[34px]">

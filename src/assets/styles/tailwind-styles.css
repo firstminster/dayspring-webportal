@@ -6,6 +6,13 @@
 /* Font style imports [Work Sans] */
 @import url("https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 
+/* React slick carousel css import */
+@import "~slick-carousel/slick/slick.css";
+@import "~slick-carousel/slick/slick-theme.css";
+
+/* React animated slider css import */
+/* @import "react-animated-slider/build/horizontal.css"; */
+
 /* Custom utility classes */
 /* ================== */
 /* Button */
@@ -45,3 +52,14 @@
 }
 
 /* Animation */
+
+/* Students reviews */
+.slide {
+  @apply transition-all duration-300 ease-in-out opacity-100 w-full h-[1000px];
+  transform: scale(0.5);
+}
+
+.activeSlide {
+  @apply opacity-100;
+  transform: scale(1.1);
+}

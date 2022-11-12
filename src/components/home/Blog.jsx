@@ -15,7 +15,7 @@ const Blog = () => {
             </h2>
             <NavLink
               to="#"
-              className="flex items-center justify-center lg:w-[185px] lg:h-[49px] lg:bg-blue-primary text-blue-primary lg:text-white text-sm xl:text-lg uppercase lg:normal-case rounded-full hover:text-medium-orchid lg:hover:bg-medium-orchid transition-all duration-300 ease-out "
+              className="flex items-center justify-center lg:w-[185px] lg:h-[49px] lg:bg-blue-primary text-blue-primary lg:text-white text-sm xl:text-lg uppercase lg:normal-case rounded-full hover:text-medium-orchid lg:hover:text-white lg:hover:bg-medium-orchid transition-all duration-300 ease-out "
             >
               <span className="mr-[11px]">See all</span>
               <FaArrowRight className="w-[13.54px] h-[11.89px]" />

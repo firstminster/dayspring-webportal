@@ -70,6 +70,31 @@ export const sliderData = [
   },
 ];
 
+// student testimonial data
+export const StudentsReviews = [
+  {
+    _id: 1,
+    name: "Sola Olusegun",
+    quote:
+      "Our teachers are the best thing at Dayspring Academy. They listen to us and make us understand the course being taught.",
+    title: "SS3 Class Rep",
+  },
+  {
+    _id: 2,
+    name: "Jude Ogbegon",
+    quote:
+      "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sequi dolore debitis consequatur sed, adipisci ipsa voluptas enim voluptate. Vel, molestias vitae.",
+    title: "SS1 Class Rep",
+  },
+  {
+    _id: 3,
+    name: "Oremi segun",
+    quote:
+      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Est nihil sapiente perferendis ipsum maxime! Assumenda quisquam laboriosam maiores nam!",
+    title: "JS3 Class Rep",
+  },
+];
+
 //********** */ working code
 
 // const [currentSlide, setCurrentSlide] = useState(0);

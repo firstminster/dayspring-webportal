@@ -25,18 +25,19 @@ export const TeachersAndFacilities = lazy(() =>
     /*webpackChunkName: "TeachersAndFacilities"*/ "./home/TeachersAndFacilities"
   )
 );
+export const StudentsTestimonial = lazy(() =>
+  import(
+    /*webpackChunkName: "StudentsTestimonial"*/ "./home/StudentsTestimonial"
+  )
+);
 export const Blog = lazy(() =>
-  import(/*webpackChunkName: "Blog"*/ "../components/home/Blog")
+  import(/*webpackChunkName: "Blog"*/ "./home/Blog")
 );
 export const UpcomingEvents = lazy(() =>
-  import(
-    /*webpackChunkName: " UpcomingEvents"*/ "../components/home/UpcomingEvents"
-  )
+  import(/*webpackChunkName: " UpcomingEvents"*/ "./home/UpcomingEvents")
 );
 export const CallToAction = lazy(() =>
-  import(
-    /*webpackChunkName: " CallToAction"*/ "../components/home/CallToAction"
-  )
+  import(/*webpackChunkName: " CallToAction"*/ "./home/CallToAction")
 );
 
 // export { default as Slider } from "./home/Slider";

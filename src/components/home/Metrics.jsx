@@ -31,7 +31,7 @@ const Metrics = () => {
       <img
         src={patternDoodleWhiteMetricsMobileImg}
         alt="metrics-bg"
-        className="lg:hidden h-[462px] w-full object-cover bg-blue-primary "
+        className="lg:hidden h-[462px] w-full object-cover bg-blue-primary"
       />
     </div>
   );
