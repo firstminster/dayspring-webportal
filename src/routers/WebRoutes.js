@@ -1,7 +1,7 @@
 import React, { lazy, Suspense } from "react";
 import { Routes, Route } from "react-router-dom";
 // Components
-import { Navbar } from "../components";
+import { Navbar, Spinner } from "../components";
 // Pages
 import {
   Home,
@@ -31,13 +31,7 @@ const WebRoutes = () => {
   return (
     <>
       <Navbar />
-      <Suspense
-        fallback={
-          <div className="absolute top-[75px] lg:top-[95px] inset-x-0 text-2xl">
-            Loading...
-          </div>
-        }
-      >
+      <Suspense fallback={<Spinner />}>
         <Routes>
           <Route index path="/" element={<Home />} />
           {/* Auth */}
