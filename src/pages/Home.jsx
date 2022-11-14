@@ -5,7 +5,9 @@ import {
   Footer,
   Metrics,
   OurValue,
+  ParentsTestimonial,
   Slider,
+  Spinner,
   StudentsTestimonial,
   TeachersAndFacilities,
   UpcomingEvents,
@@ -15,25 +17,26 @@ import {
 function Home() {
   return (
     <main className="relative">
-      <Suspense
-        fallback={
-          <div className="absolute top-[75px] lg:top-[95px] inset-x-0 text-2xl">
-            Loading...
-          </div>
-        }
-      >
+      <Suspense fallback={<Spinner />}>
         <section className="absolute top-[75px] lg:top-[95px] inset-x-0">
           <Slider />
         </section>
         <WhyChooseUs />
-        <OurValue />
+        <div className="absolute top-[121rem] lg:top-[99rem] inset-x-0 ">
+          <OurValue />
+        </div>
         <Metrics />
         <TeachersAndFacilities />
+        <ParentsTestimonial />
         <StudentsTestimonial />
-        {/* <Blog /> */}
-        <UpcomingEvents />
-        <CallToAction />
-        <section className="absolute top-[420rem] lg:top-[305rem] inset-x-0">
+        <Blog />
+        <div className="absolute top-[425rem] sm:top-[390rem] md:top-[362rem] lg:top-[305rem] inset-x-0">
+          <UpcomingEvents />
+        </div>
+        <div className="absolute top-[445rem] sm:top-[410rem] md:top-[383rem] lg:top-[335rem] inset-x-0">
+          <CallToAction />
+        </div>
+        <section className="absolute top-[468rem] sm:top-[435rem] md:top-[405rem] lg:top-[358rem] inset-x-0">
           <Footer />
         </section>
       </Suspense>

@@ -10,7 +10,7 @@ import {
 
 const TeachersAndFacilities = () => {
   return (
-    <div className="absolute top-[208rem] sm:top-[195rem] lg:top-[150rem] inset-x-0">
+    <div className="absolute top-[208rem] sm:top-[195rem] lg:top-[145rem] inset-x-0">
       <div className="container mx-auto">
         <div className="flex flex-col items-center">
           {/* teacher section */}

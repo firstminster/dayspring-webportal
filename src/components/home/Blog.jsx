@@ -5,7 +5,7 @@ import { allWorkImg, learningImg, parentsImg } from "../../assets/importAssets";
 
 const Blog = () => {
   return (
-    <div className="absolute top-[295rem] sm:top-[280rem] md:top-[255rem] lg:top-[220rem] inset-x-0">
+    <div className="absolute top-[351rem] sm:top-[338rem] md:top-[310rem] lg:top-[272rem] inset-x-0">
       <div className="container mx-auto flex flex-col items-center ">
         {/* <div className="flex flex-col items-center "> */}
         <div className="">

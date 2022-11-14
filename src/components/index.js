@@ -7,6 +7,9 @@ export const Footer = lazy(() =>
   import(/*webpackChunkName: " Footer"*/ "./footer/Footer")
 );
 
+// Web > UIElements
+export { default as Spinner } from "./UIElements/Spinner";
+
 // Web > Home
 export const Slider = lazy(() =>
   import(/*webpackChunkName: "Slider"*/ "./home/Slider")
@@ -24,6 +27,9 @@ export const TeachersAndFacilities = lazy(() =>
   import(
     /*webpackChunkName: "TeachersAndFacilities"*/ "./home/TeachersAndFacilities"
   )
+);
+export const ParentsTestimonial = lazy(() =>
+  import(/*webpackChunkName: "ParentsTestimonial"*/ "./home/ParentsTestimonial")
 );
 export const StudentsTestimonial = lazy(() =>
   import(

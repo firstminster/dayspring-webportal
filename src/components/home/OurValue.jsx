@@ -8,7 +8,7 @@ import {
 
 const OurValue = () => {
   return (
-    <div className="absolute top-[121rem] lg:top-[99rem] inset-x-0 ">
+    <>
       <div className="container mx-auto flex flex-col items-center justify-center lg:justify-between">
         <h1 className=" text-xl lg:text-[32px] font-semibold mb-[49px] text-center">
           Our Values
@@ -67,7 +67,7 @@ const OurValue = () => {
         alt="spiral-arrow"
         className="invisible xl:visible absolute -top-[5rem] xl:left-[19rem]  2xl:left-[25rem] h-auto w-[250px] object-contain"
       />
-    </div>
+    </>
   );
 };
 

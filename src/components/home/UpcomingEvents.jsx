@@ -5,7 +5,7 @@ import { HiOutlineLocationMarker } from "react-icons/hi";
 
 const UpcomingEvents = () => {
   return (
-    <div className="absolute top-[368rem] sm:top-[330rem] md:top-[308rem] lg:top-[253rem] inset-x-0">
+    <>
       <div className="flex justify-center items-center">
         <h2 className="mr-[150px] lg:mr-[650px] xl:mr-[710px] font-semibold text-xl lg:text-[32px]">
           Upcoming Events
@@ -162,7 +162,7 @@ const UpcomingEvents = () => {
           </div> */}
         </div>
       </div>
-    </div>
+    </>
   );
 };
 
