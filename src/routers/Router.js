@@ -1,8 +1,9 @@
-import React, { Suspense } from "react";
+import React from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 // Pages
-import { NotFound } from "../pages";
+// import { NotFound } from "../pages";
 // Routers
+import { NotFound } from "../components";
 import { AdminRoutes, WebRoutes } from ".";
 
 const RouterComponent = () => {

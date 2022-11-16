@@ -28,3 +28,4 @@ export { default as facilityImg } from "../assets/img/facility.png";
 export { default as learningImg } from "../assets/img/learning.png";
 export { default as parentsImg } from "../assets/img/parents.png";
 export { default as allWorkImg } from "../assets/img/all-work-no-play.png";
+export { default as Page404 } from "../assets/img/404-page.png";

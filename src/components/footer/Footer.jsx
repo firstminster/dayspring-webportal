@@ -49,8 +49,8 @@ const Footer = () => {
 
         <div className="w-full mt-[42px] lg:mt-[163px]">
           <hr className="border border-blue-primary" />
-          <div className="text-white flex flex-col lg:flex-row justify-between mt-[38px]">
-            <p className="text-sm">
+          <div className="text-white flex flex-col lg:flex-row justify-between mt-[38px] text-sm lg:text-[15px]">
+            <p className="">
               Copyright &copy; {new Date().getFullYear()}{" "}
               <span className="text-blue-primary ">Dayspring Academy</span>.
             </p>
@@ -63,12 +63,12 @@ const Footer = () => {
       <img
         src={patternDoodleWhiteImg}
         alt=""
-        className="hidden lg:block bg-black w-full lg:h-[513px] object-cover "
+        className="hidden lg:block bg-black w-full lg:h-[513px] object-cover"
       />
       <img
         src={patternDoodleWhiteMobileImg}
         alt=""
-        className="lg:hidden bg-black w-full h-[950px] lg:h-[513px] object-cover "
+        className="lg:hidden bg-black w-full h-[950px] lg:h-[513px] object-cover"
       />
     </div>
   );

@@ -1,7 +1,7 @@
 import React, { lazy, Suspense } from "react";
 import { Routes, Route } from "react-router-dom";
 // Components
-import { Navbar, Spinner } from "../components";
+import { Navbar, NotFound, Spinner } from "../components";
 // Pages
 import {
   Home,
@@ -44,6 +44,7 @@ const WebRoutes = () => {
           <Route path="/blogs" element={<Blog />} />
           <Route path="/admission" element={<Admission />} />
           <Route path="/contact" element={<ContactForm />} />
+          <Route path="*" element={<NotFound />} />
         </Routes>
       </Suspense>
     </>

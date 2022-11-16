@@ -9,6 +9,7 @@ export const Footer = lazy(() =>
 
 // Web > UIElements
 export { default as Spinner } from "./UIElements/Spinner";
+export { default as NotFound } from "./UIElements/NotFound";
 
 // Web > Home
 export const Slider = lazy(() =>

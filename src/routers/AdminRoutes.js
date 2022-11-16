@@ -1,7 +1,7 @@
 import React from "react";
 import { Routes, Route } from "react-router-dom";
 // Pages
-import { AdminDashboard, NotFound } from "../pages";
+import { AdminDashboard } from "../pages";
 // Components
 import {
   AdminHome,
@@ -14,6 +14,7 @@ import {
   AddTeacher,
   TeacherDetails,
   EditTeacher,
+  NotFound,
 } from "../components";
 
 const AdminRoutes = () => {

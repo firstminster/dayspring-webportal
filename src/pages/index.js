@@ -13,4 +13,3 @@ export { default as ForgotPassword } from "./auth/ForgotPassword";
 export { default as ResetPassword } from "./auth/ResetPassword";
 // Dashboard
 export { default as AdminDashboard } from "./dashboards/adminDashboard/AdminDashboard";
-export { default as NotFound } from "./NotFound";
