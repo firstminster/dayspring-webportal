@@ -20,9 +20,10 @@ const StaffLogin = () => {
   });
 
   // Login submit handler
-  const handleLogin = (payload, { setSubmitting }) => {
+  const handleLogin = (payload, actions) => {
     console.log(payload);
-    setSubmitting(false);
+    console.log(actions);
+    // actions.setSubmitting(false);
   };
 
   return (
@@ -69,7 +70,6 @@ const StaffLogin = () => {
                               : null
                           }`}
                         />
-
                         <ErrorMessage
                           name="student_num"
                           component="div"
@@ -117,11 +117,9 @@ const StaffLogin = () => {
                       </div>
                     </div>
 
-                    <div>
-                      <button type="submit" className="btn">
-                        Sign in
-                      </button>
-                    </div>
+                    <button type="submit" className="btn">
+                      Sign in
+                    </button>
                   </Form>
                 )}
               </Formik>

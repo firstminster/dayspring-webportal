@@ -10,16 +10,18 @@ import {
   Blog,
   Admission,
   ContactForm,
-  // Login,
-  // ForgotPassword,
+  Login,
+  ForgotPassword,
   ResetPassword,
 } from "../pages";
 
 // const Home = lazy(() => import("../pages/Home"));
-const Login = lazy(() =>
-  import(/*webpackChunkName: "Home"*/ "../pages/auth/Login")
-);
-const ForgotPassword = lazy(() => import("../pages/auth/ForgotPassword"));
+// const Login = lazy(() =>
+//   import(/*webpackChunkName: "Login"*/ "../pages/auth/Login")
+// );
+// const ForgotPassword = lazy(() =>
+//   import(/*webpackChunkName: "ForgotPassword"*/ "../pages/auth/ForgotPassword")
+// );
 // const ResetPassword = lazy(() => import("../pages/auth/ResetPassword"));
 // const About = lazy(() => import("../pages/About"));
 // const Gallery = lazy(() => import("../pages/Gallery"));
