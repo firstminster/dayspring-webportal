@@ -20,8 +20,6 @@ const {
   },
 } = admissionFormModel;
 
-console.log(admissionFormModel);
-
 export default {
   [surname.name]: "",
   [firstName.name]: "",

@@ -18,7 +18,7 @@ const { formId, formField } = admissionFormModel;
 const _renderStepContent = (step) => {
   switch (step) {
     case 0:
-      return <GeneralInfoForm />;
+      return <GeneralInfoForm formField={formField} />;
     case 1:
       return <FamilyInfoForm />;
     case 2:
