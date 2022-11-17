@@ -1,4 +1,5 @@
 import React from "react";
+import { GeneralInfo } from "../components";
 
 const Admission = () => {
   return (
@@ -9,17 +10,19 @@ const Admission = () => {
           <h1 className="text-6xl font-semibold">Admissions</h1>
           <p className="text-center mt-[21px] text-2xl ">
             To enrol your child at Dayspring Academy, kindly assist <br />
-            them in filling the form below. This should take 30 <br /> minutes
+            them in filling the form below. This should take <br /> 30 minutes
             or less.
           </p>
         </div>
-        <div className="mt-[27px]">
+        {/* Notice */}
+        <div className="my-[27px]">
           <p className="text-center">
             On completing this form, you will be required to pay a registration
             fee of N10,000.
           </p>
         </div>
         {/* Forms */}
+        <GeneralInfo />
       </div>
     </section>
   );

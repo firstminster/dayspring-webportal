@@ -56,6 +56,13 @@ export const CallToAction = lazy(() =>
 // export { default as UpcomingEvents } from "./home/UpcomingEvents";
 // export { default as CallToAction } from "./home/CallToAction";
 
+// Web > Admissions
+export { default as GeneralInfo } from "./admissions/forms/GeneralInfo";
+export { default as FamilyInfo } from "./admissions/forms/FamilyInfo";
+export { default as SchoolInfo } from "./admissions/forms/SchoolInfo";
+export { default as TransferPupilInfo } from "./admissions/forms/TransferPupilInfo";
+export { default as HealthHistory } from "./admissions/forms/HealthHistory";
+
 // Admin
 export { default as AdminHome } from "./dashboards/adminDashboard/AdminHome";
 export { default as AdminProfile } from "./dashboards/adminDashboard/Profile";
