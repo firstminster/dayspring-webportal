@@ -18,7 +18,6 @@ export default {
       name: "middleName",
       label: "Middle Name",
       placeholder: "Enter your middle name",
-      //   requiredErrorMsg: "Middle Name is required",
     },
     email: {
       name: "email",

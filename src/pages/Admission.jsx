@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import { Form, Formik } from "formik";
 // components
 import {
@@ -12,6 +12,14 @@ import {
   HealthHistoryForm,
 } from "../components";
 
+// muilti-form steps
+const steps = [
+  "General information",
+  "Family information",
+  "School information",
+  "Transfer pupil info",
+  "Health history",
+];
 // destructure the form model data
 const { formId, formField } = admissionFormModel;
 
@@ -34,6 +42,9 @@ const _renderStepContent = (step) => {
 };
 
 const Admission = () => {
+  const [activeStep, setActiveStep] = useState(0);
+  const currentValidationSchema = validationSchema[activeStep];
+  const isLastStep = activeStep === steps.length - 1;
   return (
     <section className="relative">
       <div className="absolute top-[95px]">
@@ -54,7 +65,10 @@ const Admission = () => {
           </p>
         </div>
         {/* Forms */}
-        <Formik>
+        <Formik
+          initialValues={formInitialValues}
+          validationSchema={currentValidationSchema}
+        >
           {({ errors, touched, isSubmitting }) => (
             <Form id={formId}>{_renderStepContent(0)}</Form>
           )}

@@ -25,7 +25,6 @@ export default [
   Yup.object().shape({
     [surname.name]: Yup.string().required(`${surname.requiredErrorMsg}`),
     [firstName.name]: Yup.string().required(`${firstName.requiredErrorMsg}`),
-    [middleName.name]: Yup.string().required(`${middleName.requiredErrorMsg}`),
     [email.name]: Yup.string()
       .email(`Enter an email address in the format "username@domain.com"`)
       .required(`${email.requiredErrorMsg}`),

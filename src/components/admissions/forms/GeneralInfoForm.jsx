@@ -38,7 +38,7 @@ const GeneralInfoForm = (props) => {
       </div>
 
       {/* input fields */}
-      <div className="flex flex-col mt-[19px]">
+      <div className="flex flex-col space-y-5 mt-[19px]">
         <div className="flex">
           <InputField
             name={surname.name}
@@ -50,6 +50,32 @@ const GeneralInfoForm = (props) => {
             name={firstName.name}
             label={firstName.label}
             placeholder={firstName.placeholder}
+            style={`w-[256px] h-[50px]`}
+          />
+        </div>
+        <InputField
+          name={middleName.name}
+          label={middleName.label}
+          placeholder={middleName.placeholder}
+          style={`w-[527px] h-[50px]`}
+        />
+        <InputField
+          name={email.name}
+          label={email.label}
+          placeholder={email.placeholder}
+          style={`w-[527px] h-[50px]`}
+        />
+        <div className="flex">
+          <InputField
+            name={dateOfBirth.name}
+            label={dateOfBirth.label}
+            placeholder={dateOfBirth.placeholder}
+            style={`mr-[15px] w-[256px] h-[50px]`}
+          />
+          <InputField
+            name={gender.name}
+            label={gender.label}
+            placeholder={gender.placeholder}
             style={`w-[256px] h-[50px]`}
           />
         </div>
