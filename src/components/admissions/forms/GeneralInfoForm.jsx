@@ -1,7 +1,8 @@
 import React from "react";
+import { Field } from "formik";
 import { FaArrowLeft, FaArrowRight } from "react-icons/fa";
 
-const GeneralInfo = () => {
+const GeneralInfoForm = () => {
   return (
     <div className="container mx-auto flex flex-col items-center justify-center ">
       <div className="flex items-center justify-between">
@@ -15,8 +16,16 @@ const GeneralInfo = () => {
           </button>
         </div>
       </div>
+
+      {/* input fields */}
+      <div className="">
+        <label htmlFor="surname" className="">
+          Surname
+        </label>
+        <Field name="surname" type="text" className="" />
+      </div>
     </div>
   );
 };
 
-export default GeneralInfo;
+export default GeneralInfoForm;

@@ -59,7 +59,7 @@ const StaffLogin = () => {
                       </label>
                       <div className="mt-1">
                         <Field
-                          id="student_num"
+                          // id="student_num"
                           name="student_num"
                           type="text"
                           placeholder="Student Number"
@@ -87,7 +87,7 @@ const StaffLogin = () => {
                       </label>
                       <div className="mt-1">
                         <Field
-                          id="password"
+                          // id="password"
                           name="password"
                           type="password"
                           placeholder="Password"

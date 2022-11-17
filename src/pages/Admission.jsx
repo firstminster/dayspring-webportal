@@ -1,5 +1,37 @@
 import React from "react";
-import { GeneralInfo } from "../components";
+import { Form, Formik } from "formik";
+// components
+import {
+  validationSchema,
+  admissionFormModel,
+  formInitialValues,
+  GeneralInfoForm,
+  FamilyInfoForm,
+  SchoolInfoForm,
+  TransferPupilInfoForm,
+  HealthHistoryForm,
+} from "../components";
+
+// destructure the form model data
+const { formId, formField } = admissionFormModel;
+
+const _renderStepContent = (step) => {
+  switch (step) {
+    case 0:
+      return <GeneralInfoForm />;
+    case 1:
+      return <FamilyInfoForm />;
+    case 2:
+      return <SchoolInfoForm />;
+    case 3:
+      return <TransferPupilInfoForm />;
+    case 4:
+      return <HealthHistoryForm />;
+
+    default:
+      return <div>Not Found</div>;
+  }
+};
 
 const Admission = () => {
   return (
@@ -22,7 +54,11 @@ const Admission = () => {
           </p>
         </div>
         {/* Forms */}
-        <GeneralInfo />
+        <Formik>
+          {({ errors, touched, isSubmitting }) => (
+            <Form id={formId}>{_renderStepContent(0)}</Form>
+          )}
+        </Formik>
       </div>
     </section>
   );
