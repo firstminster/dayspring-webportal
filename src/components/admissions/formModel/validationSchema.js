@@ -31,7 +31,9 @@ export default [
     [dateOfBirth.name]: Yup.string()
       .nullable()
       .required(`${dateOfBirth.requiredErrorMsg}`),
-    [gender.name]: Yup.string().required(`${gender.requiredErrorMsg}`),
+    [gender.name]: Yup.string()
+      .nullable(true)
+      .required(`${gender.requiredErrorMsg}`),
     [age.name]: Yup.string().required(`${age.requiredErrorMsg}`),
     [placeOfBirth.name]: Yup.string().required(
       `${placeOfBirth.requiredErrorMsg}`
