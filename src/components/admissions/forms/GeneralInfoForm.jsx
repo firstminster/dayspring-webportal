@@ -3,6 +3,7 @@ import { Field } from "formik";
 import { FaArrowLeft, FaArrowRight } from "react-icons/fa";
 import InputField from "../formFields/InputField";
 import SelectField from "../formFields/SelectField";
+import PhoneNumberField from "../formFields/PhoneInputField";
 
 // gender
 const genderArr = [
@@ -141,6 +142,22 @@ const GeneralInfoForm = (props) => {
             name={placeOfBirth.name}
             label={placeOfBirth.label}
             placeholder={placeOfBirth.placeholder}
+            inputType="text"
+            style={`w-[256px] h-[50px]`}
+          />
+        </div>
+        {/* phone number & Nationality */}
+        <div className="flex">
+          <PhoneNumberField
+            name={phoneNumber.name}
+            label={phoneNumber.label}
+            inputType="tel"
+            style={`mr-[15px]`}
+          />
+          <InputField
+            name={nationality.name}
+            label={nationality.label}
+            placeholder={nationality.placeholder}
             inputType="text"
             style={`w-[256px] h-[50px]`}
           />

@@ -52,13 +52,11 @@ export default {
     phoneNumber: {
       name: "phoneNumber",
       label: "Phone Number",
-      //   placeholder: "Enter your Phone Number",
       requiredErrorMsg: "Phone Number is required",
     },
     nationality: {
       name: "nationality",
       label: "Nationality",
-      //   placeholder: "Enter your Phone Number",
       requiredErrorMsg: "Nationality is required",
     },
     stateOfOrigin: {

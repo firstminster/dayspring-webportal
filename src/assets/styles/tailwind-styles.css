@@ -10,6 +10,9 @@
 @import "~slick-carousel/slick/slick.css";
 @import "~slick-carousel/slick/slick-theme.css";
 
+/* React phone input bootstrap.css styles */
+@import "react-phone-input-2/lib/bootstrap.css";
+
 /* React animated slider css import */
 /* @import "react-animated-slider/build/horizontal.css"; */
 

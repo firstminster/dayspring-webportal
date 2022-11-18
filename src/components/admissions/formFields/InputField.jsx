@@ -4,8 +4,8 @@ import { at } from "lodash";
 
 const InputField = (props) => {
   const { name, label, placeholder, inputType, style } = props;
-  const [field, meta] = useField(props);
-  const [touched, error] = at(meta, "touched", "error");
+  const [field, meta] = useField(props.name);
+  // const [touched, error] = at(meta, "touched", "error");
   // const isError = touched && error && true;
   // console.log(field);
   // console.log(meta);
@@ -18,9 +18,9 @@ const InputField = (props) => {
       </label>
 
       <Field
+        min={1}
         name={name}
         type={inputType}
-        min={1}
         placeholder={placeholder}
         className={`${style} appearance-none rounded-[10px] border border-quick-silver placeholder-quick-silver focus:border-blue-primary focus:outline-none focus:ring-blue-primary `}
       />
