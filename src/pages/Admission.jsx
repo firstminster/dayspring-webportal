@@ -47,6 +47,12 @@ const Admission = () => {
   const currentValidationSchema = validationSchema[activeStep];
   const isLastStep = activeStep === steps.length - 1;
 
+  // submit handler
+  const _handleSubmit = () => {
+    setActiveStep(activeStep + 1);
+  };
+
+  // form back button handler
   const _handleBack = () => {
     setActiveStep(activeStep - 1);
   };
@@ -55,7 +61,11 @@ const Admission = () => {
     switch (step) {
       case 0:
         return (
-          <GeneralInfoForm formField={formField} handleBack={_handleBack} />
+          <GeneralInfoForm
+            formField={formField}
+            handleBack={_handleBack}
+            handleSubmit={_handleSubmit}
+          />
         );
       case 1:
         return <FamilyInfoForm />;
@@ -93,10 +103,11 @@ const Admission = () => {
         <Formik
           initialValues={formInitialValues}
           validationSchema={currentValidationSchema}
+          onSubmit={_handleSubmit}
         >
           {({ errors, touched, isSubmitting }) => (
             <Form id={formId}>
-              {_renderStepContent(0)}
+              {_renderStepContent(activeStep)}
 
               <div className="flex items-center justify-center">
                 <button className="flex items-center justify-center w-[180px] h-[37px] lg:w-[527px] lg:h-[49px] px-[20px] py-[8px] my-[48px] bg-blue-primary text-white text-[16px] xl:text-lg rounded-full hover:bg-medium-orchid transition-all duration-300 ease-out ">
