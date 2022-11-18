@@ -11,6 +11,7 @@ import {
   TransferPupilInfoForm,
   HealthHistoryForm,
 } from "../components";
+import { FaArrowRight } from "react-icons/fa";
 
 // muilti-form steps
 const steps = [
@@ -23,28 +24,52 @@ const steps = [
 // destructure the form model data
 const { formId, formField } = admissionFormModel;
 
-const _renderStepContent = (step) => {
-  switch (step) {
-    case 0:
-      return <GeneralInfoForm formField={formField} />;
-    case 1:
-      return <FamilyInfoForm />;
-    case 2:
-      return <SchoolInfoForm />;
-    case 3:
-      return <TransferPupilInfoForm />;
-    case 4:
-      return <HealthHistoryForm />;
+// const _renderStepContent = (step) => {
+//   switch (step) {
+//     case 0:
+//       return <GeneralInfoForm formField={formField} />;
+//     case 1:
+//       return <FamilyInfoForm />;
+//     case 2:
+//       return <SchoolInfoForm />;
+//     case 3:
+//       return <TransferPupilInfoForm />;
+//     case 4:
+//       return <HealthHistoryForm />;
 
-    default:
-      return <div>Not Found</div>;
-  }
-};
+//     default:
+//       return <div>Not Found</div>;
+//   }
+// };
 
 const Admission = () => {
   const [activeStep, setActiveStep] = useState(0);
   const currentValidationSchema = validationSchema[activeStep];
   const isLastStep = activeStep === steps.length - 1;
+
+  const _handleBack = () => {
+    setActiveStep(activeStep - 1);
+  };
+
+  const _renderStepContent = (step) => {
+    switch (step) {
+      case 0:
+        return (
+          <GeneralInfoForm formField={formField} handleBack={_handleBack} />
+        );
+      case 1:
+        return <FamilyInfoForm />;
+      case 2:
+        return <SchoolInfoForm />;
+      case 3:
+        return <TransferPupilInfoForm />;
+      case 4:
+        return <HealthHistoryForm />;
+      default:
+        return <div>Not Found</div>;
+    }
+  };
+
   return (
     <section className="relative">
       <div className="absolute top-[95px]">
@@ -70,7 +95,16 @@ const Admission = () => {
           validationSchema={currentValidationSchema}
         >
           {({ errors, touched, isSubmitting }) => (
-            <Form id={formId}>{_renderStepContent(0)}</Form>
+            <Form id={formId}>
+              {_renderStepContent(0)}
+
+              <div className="flex items-center justify-center">
+                <button className="flex items-center justify-center w-[180px] h-[37px] lg:w-[527px] lg:h-[49px] px-[20px] py-[8px] my-[48px] bg-blue-primary text-white text-[16px] xl:text-lg rounded-full hover:bg-medium-orchid transition-all duration-300 ease-out ">
+                  {isLastStep ? "Submit & Make payment" : "Next"}
+                  <FaArrowRight className="ml-3 w-[13.54px] h-[11.89px] text-white " />
+                </button>
+              </div>
+            </Form>
           )}
         </Formik>
       </div>

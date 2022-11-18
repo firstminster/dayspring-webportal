@@ -4,6 +4,7 @@ import { FaArrowLeft, FaArrowRight } from "react-icons/fa";
 import InputField from "../formFields/InputField";
 import SelectField from "../formFields/SelectField";
 import PhoneNumberField from "../formFields/PhoneInputField";
+import CountryInputField from "../formFields/CountryInputField";
 
 // gender
 const genderArr = [
@@ -74,8 +75,8 @@ const GeneralInfoForm = (props) => {
       <div className="flex items-center justify-between">
         <p className="text-3xl font-semibold mr-[160px]">General Information</p>
         <div className="flex">
-          <button className=" bg-gray-x-11-gray w-[30px] h-[30px] flex items-center justify-center mr-2 rounded-full">
-            <FaArrowLeft className="w-[13.54px] h-[11.89px]" />
+          <button className="border border-blue-primary bg-white w-[30px] h-[30px] flex items-center justify-center mr-2 rounded-full">
+            <FaArrowLeft className="w-[13.54px] h-[11.89px] text-blue-primary" />
           </button>
           <button className="bg-blue-primary w-[30px] h-[30px]w-[30px] h-[30px] flex items-center justify-center rounded-full">
             <FaArrowRight className="w-[13.54px] h-[11.89px] text-white " />
@@ -154,12 +155,12 @@ const GeneralInfoForm = (props) => {
             inputType="tel"
             style={`mr-[15px]`}
           />
-          <InputField
+          <CountryInputField
             name={nationality.name}
             label={nationality.label}
             placeholder={nationality.placeholder}
-            inputType="text"
-            style={`w-[256px] h-[50px]`}
+            // inputType="text"
+            inputStyle={`w-[256px] h-[50px]`}
           />
         </div>
         <div className="flex">

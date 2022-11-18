@@ -57,6 +57,7 @@ export default {
     nationality: {
       name: "nationality",
       label: "Nationality",
+      placeholder: "Enter your Nationality",
       requiredErrorMsg: "Nationality is required",
     },
     stateOfOrigin: {
