@@ -134,20 +134,21 @@ const Admission = () => {
             </p>
           </div>
           <>
+            {/* // <Step key={label}>
+              //   <StepLabel>{label}</StepLabel>
+              // </Step> */}
+            {/* General Information */}
             <div className="flex items-center justify-between w-[527px]">
-              {steps.find((label, idx) => (
-                // <Step key={label}>
-                //   <StepLabel>{label}</StepLabel>
-                // </Step>
-                <h2 key={idx} className="text-3xl font-semibold mr-[100px]">
-                  {/* General Information */}
-                  {label === label[idx]}
-                </h2>
-              ))}
+              <h2 className="text-3xl font-semibold mr-[160px]">
+                {steps.find((label, idx) => {
+                  return idx === activeStep;
+                })}
+              </h2>
               <StepButton
                 handleBack={handlePrev}
                 handleSubmit={handleSubmit}
                 activeStep={activeStep}
+                steps={steps}
               />
             </div>
             {/* Forms */}

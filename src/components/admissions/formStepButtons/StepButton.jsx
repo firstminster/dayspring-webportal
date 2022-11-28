@@ -1,7 +1,7 @@
 import React from "react";
 import { FaArrowLeft, FaArrowRight } from "react-icons/fa";
 
-const StepButton = ({ handleBack, handleSubmit, activeStep }) => {
+const StepButton = ({ handleBack, handleSubmit, activeStep, steps }) => {
   return (
     <div className="flex">
       {activeStep !== 0 && (
