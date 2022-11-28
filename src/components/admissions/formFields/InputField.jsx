@@ -24,7 +24,6 @@ const InputField = (props) => {
         placeholder={placeholder}
         className={`${style} appearance-none rounded-[10px] border border-quick-silver placeholder-quick-silver focus:border-blue-primary focus:outline-none focus:ring-blue-primary `}
       />
-
       <ErrorMessage
         name={name}
         component="div"

@@ -6,7 +6,7 @@ const {
   formField: {
     surname,
     firstName,
-    middleName,
+    // middleName,
     email,
     dateOfBirth,
     gender,
@@ -32,7 +32,7 @@ export default [
       .nullable()
       .required(`${dateOfBirth.requiredErrorMsg}`),
     [gender.name]: Yup.string()
-      .nullable(true)
+      .nullable()
       .required(`${gender.requiredErrorMsg}`),
     [age.name]: Yup.string().required(`${age.requiredErrorMsg}`),
     [placeOfBirth.name]: Yup.string().required(

@@ -21,12 +21,6 @@ const CountryInputField = (props) => {
         className={`${inputStyle}  rounded-[10px] border border-quick-silver 
         placeholder-quick-silver  focus:border-blue-primary focus:outline-none 
         outline-0 focus:ring-blue-primary`}
-        // style={{
-        //   border: "0px",
-        //   color: "#fff",
-        //   outline: "none",
-        //   placeholder: "#A0A0A0",
-        // }}
       />
       <ErrorMessage
         name={name}
