@@ -18,6 +18,21 @@ const {
     town,
     classCategory,
     address,
+
+    fatherName,
+    fatherOccupation,
+    fatherReligion,
+    fatherPhoneNumber,
+    motherName,
+    motherOccupation,
+    motherReligion,
+    motherPhoneNumber,
+    denominationName,
+    denominationAddress,
+    parentsBornAgain,
+    objectionPreaching,
+    enrollmentReason,
+    pastorName,
   },
 } = admissionFormModel;
 
@@ -51,9 +66,45 @@ export default [
       `${stateOfOrigin.requiredErrorMsg}`
     ),
     [town.name]: Yup.string().required(`${town.requiredErrorMsg}`),
-    [classCategory.name]: Yup.string().required(
-      `${classCategory.requiredErrorMsg}`
-    ),
+    [classCategory.name]: Yup.string()
+      .nullable()
+      .required(`${classCategory.requiredErrorMsg}`),
     [address.name]: Yup.string().required(`${address.requiredErrorMsg}`),
+    [fatherName.name]: Yup.string().required(`${fatherName.requiredErrorMsg}`),
+    [fatherOccupation.name]: Yup.string().required(
+      `${fatherOccupation.requiredErrorMsg}`
+    ),
+    [fatherReligion.name]: Yup.string().required(
+      `${fatherReligion.requiredErrorMsg}`
+    ),
+    [fatherPhoneNumber.name]: Yup.string().required(
+      `${fatherPhoneNumber.requiredErrorMsg}`
+    ),
+    [motherName.name]: Yup.string().required(`${motherName.requiredErrorMsg}`),
+    [motherOccupation.name]: Yup.string().required(
+      `${motherOccupation.requiredErrorMsg}`
+    ),
+    [motherReligion.name]: Yup.string().required(
+      `${motherReligion.requiredErrorMsg}`
+    ),
+    [motherPhoneNumber.name]: Yup.string().required(
+      `${motherPhoneNumber.requiredErrorMsg}`
+    ),
+    [denominationName.name]: Yup.string().required(
+      `${denominationName.requiredErrorMsg}`
+    ),
+    [denominationAddress.name]: Yup.string().required(
+      `${denominationAddress.requiredErrorMsg}`
+    ),
+    [parentsBornAgain.name]: Yup.string()
+      .nullable()
+      .required(`${parentsBornAgain.requiredErrorMsg}`),
+    [objectionPreaching.name]: Yup.string().required(
+      `${objectionPreaching.requiredErrorMsg}`
+    ),
+    [enrollmentReason.name]: Yup.string().required(
+      `${enrollmentReason.requiredErrorMsg}`
+    ),
+    [pastorName.name]: Yup.string().required(`${pastorName.requiredErrorMsg}`),
   }),
 ];

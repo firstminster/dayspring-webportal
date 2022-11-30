@@ -3,7 +3,7 @@ import { ErrorMessage, Field, useField } from "formik";
 import { at } from "lodash";
 
 const InputField = (props) => {
-  const { name, label, placeholder, inputType, style } = props;
+  const { name, label, placeholder, inputType, style, labelStyle } = props;
   const [field, meta] = useField(props.name);
   // const [touched, error] = at(meta, "touched", "error");
   // const isError = touched && error && true;
@@ -13,7 +13,7 @@ const InputField = (props) => {
 
   return (
     <div className="flex flex-col">
-      <label htmlFor={name} className="">
+      <label htmlFor={name} className={` ${labelStyle}`}>
         {label}
       </label>
 

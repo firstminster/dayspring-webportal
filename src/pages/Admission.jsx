@@ -86,23 +86,11 @@ const Admission = () => {
   const renderStepContent = (step) => {
     switch (step) {
       case 0:
-        return (
-          <GeneralInfoForm
-            formField={formField}
-            // handleBack={handlePrev}
-            // handleSubmit={handleSubmit}
-          />
-        );
+        return <GeneralInfoForm formField={formField} />;
       case 1:
-        return (
-          <FamilyInfoForm
-            formField={formField}
-            // handleBack={handlePrev}
-            // handleSubmit={handleSubmit}
-          />
-        );
+        return <FamilyInfoForm formField={formField} />;
       case 2:
-        return <SchoolInfoForm />;
+        return <SchoolInfoForm formField={formField} />;
       case 3:
         return <TransferPupilInfoForm />;
       case 4:
@@ -134,10 +122,7 @@ const Admission = () => {
             </p>
           </div>
           <>
-            {/* // <Step key={label}>
-              //   <StepLabel>{label}</StepLabel>
-              // </Step> */}
-            {/* General Information */}
+            {/* Forms header */}
             <div className="flex items-center justify-between w-[527px]">
               <h2 className="text-3xl font-semibold mr-[160px]">
                 {steps.find((label, idx) => {
@@ -148,7 +133,6 @@ const Admission = () => {
                 handleBack={handlePrev}
                 handleSubmit={handleSubmit}
                 activeStep={activeStep}
-                steps={steps}
               />
             </div>
             {/* Forms */}

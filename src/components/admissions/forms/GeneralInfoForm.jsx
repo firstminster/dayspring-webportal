@@ -1,11 +1,11 @@
 import React from "react";
-import { Field } from "formik";
-import { FaArrowLeft, FaArrowRight } from "react-icons/fa";
 import InputField from "../formFields/InputField";
 import SelectField from "../formFields/SelectField";
 import PhoneNumberField from "../formFields/PhoneInputField";
 import CountryInputField from "../formFields/CountryInputField";
-import StepButton from "../formStepButtons/StepButton";
+// import { Field } from "formik";
+// import { FaArrowLeft, FaArrowRight } from "react-icons/fa";
+// import StepButton from "../formStepButtons/StepButton";
 
 // gender
 const genderArr = [
@@ -69,23 +69,11 @@ const GeneralInfoForm = (props) => {
       classCategory,
       address,
     },
-    handleBack,
-    handleSubmit,
   } = props;
 
-  // console.log(props);
-
   return (
-    // <div className="container mx-auto flex flex-col items-center justify-center">
-    // <div className="flex items-center justify-between">
-    //   <h2 className="text-3xl font-semibold mr-[160px]">
-    //     General Information
-    //   </h2>
-    //   <StepButton handleBack={handleBack} handleSubmit={handleSubmit} />
-    // </div>
-
-    // {/* input fields */}
-    <div className="flex flex-col space-y-5 mt-[19px]">
+    // input fields
+    <div className="flex flex-col items-center space-y-5 mt-[19px]">
       <div className="flex">
         <InputField
           name={surname.name}
