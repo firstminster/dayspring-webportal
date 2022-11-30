@@ -105,7 +105,7 @@ export default {
     fatherPhoneNumber: {
       name: "fatherPhoneNumber",
       label: "Father/Guardian's Phone Number",
-      requiredErrorMsg: "Father/Guardian's Phone Number is required",
+      requiredErrorMsg: "Father Phone Number is required",
     },
     motherName: {
       name: "motherName",
@@ -223,6 +223,68 @@ export default {
     },
     emotionalChallenge: {
       name: "emotionalChallenge",
+      label:
+        "Does the student have any physical or emotional challenge that may affect their attendance?",
+      placeholder: "Enter answer here",
+      requiredErrorMsg: "Field is required",
+    },
+    lastSchoolTransfer: {
+      name: "lastSchoolTransfer",
+      label: "Name of school last attended",
+      placeholder: "Enter name of school last attended",
+      requiredErrorMsg: "Name of school is required",
+    },
+    schoolAddressTransfer: {
+      name: "schoolAddressTransfer",
+      label: "Address of school",
+      placeholder: "Entere address of school last attended",
+      requiredErrorMsg: "Address of school is required",
+    },
+    lastClassPassedTransfer: {
+      name: "lastClassPassedTransfer",
+      label: "Class last passed",
+      placeholder: "Select class last passed",
+      requiredErrorMsg: "Last class passed is required",
+    },
+    lastClassAttendedTransfer: {
+      name: "lastClassAttendedTransfer",
+      label: "Class last attended",
+      placeholder: "Select class last attended",
+      requiredErrorMsg: "Last class attended is required",
+    },
+    specialInterestTransfer: {
+      name: "specialInterestTransfer",
+      label: "Special Interests/Hobbies",
+      placeholder: "Enter what your interest/hobbies are",
+      requiredErrorMsg: "Interest/Hobbies is required",
+    },
+    hearAboutTheSchool: {
+      name: "hearAboutTheSchool",
+      label: "How did you hear about Dayspring Academy",
+      placeholder: "Enter answer here",
+      requiredErrorMsg: "Field is required",
+    },
+    academicGoalTransfer: {
+      name: "academicGoalTransfer",
+      label: "Academic Goal",
+      placeholder: "Enter your academic goal",
+      requiredErrorMsg: "Academic is required",
+    },
+    disciplinaryDifficultyTransfer: {
+      name: "disciplinaryDifficultyTransfer",
+      label:
+        "Did the student face any disciplinary difficulty in their previous school? If yes, what was it?",
+      placeholder: "Enter answer here",
+      requiredErrorMsg: "Field is required",
+    },
+    academicDifficultyTransfer: {
+      name: "academicDifficultyTransfer",
+      label: "Does the student have any academic difficulty?",
+      placeholder: "Enter answer here",
+      requiredErrorMsg: "Field is required",
+    },
+    emotionalChallengeTransfer: {
+      name: "emotionalChallengeTransfer",
       label:
         "Does the student have any physical or emotional challenge that may affect their attendance?",
       placeholder: "Enter answer here",

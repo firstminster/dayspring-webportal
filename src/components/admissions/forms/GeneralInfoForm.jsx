@@ -3,11 +3,8 @@ import InputField from "../formFields/InputField";
 import SelectField from "../formFields/SelectField";
 import PhoneNumberField from "../formFields/PhoneInputField";
 import CountryInputField from "../formFields/CountryInputField";
-// import { Field } from "formik";
-// import { FaArrowLeft, FaArrowRight } from "react-icons/fa";
-// import StepButton from "../formStepButtons/StepButton";
 
-// gender
+// gender array
 const genderArr = [
   {
     value: "",
@@ -23,7 +20,7 @@ const genderArr = [
   },
 ];
 
-// class category
+// class category array
 const classCatArr = [
   {
     value: "",
@@ -38,16 +35,60 @@ const classCatArr = [
     label: "Nursery One",
   },
   {
+    value: "nursery-two",
+    label: "Nursery Two",
+  },
+  {
+    value: "nursery-three",
+    label: "Nursery Three",
+  },
+  {
     value: "primary-one",
     label: "Primary One",
+  },
+  {
+    value: "primary-two",
+    label: "Primary Two",
+  },
+  {
+    value: "primary-three",
+    label: "Primary Three",
+  },
+  {
+    value: "primary-four",
+    label: "Primary Four",
+  },
+  {
+    value: "primary-five",
+    label: "Primary Five",
+  },
+  {
+    value: "primary-six",
+    label: "Primary six",
   },
   {
     value: "junior-sec-one",
     label: "JS One",
   },
   {
+    value: "junior-sec-two",
+    label: "JS Two",
+  },
+  {
+    value: "junior-sec-three",
+    label: "JS Three",
+  },
+  {
     value: "senior-sec-one",
     label: "SS One",
+  },
+  {
+    value: "senior-sec-two",
+    label: "SS Two",
+  },
+  {
+    value: "senior-sec-three",
+    label: "SS Three",
   },
 ];
 
@@ -181,7 +222,6 @@ const GeneralInfoForm = (props) => {
         style={`w-[527px] h-[50px]`}
       />
     </div>
-    // </div>
   );
 };
 

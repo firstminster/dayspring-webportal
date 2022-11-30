@@ -1,6 +1,70 @@
 import React from "react";
 import InputField from "../formFields/InputField";
-import StepButton from "../formStepButtons/StepButton";
+import SelectField from "../formFields/SelectField";
+
+// last class category array
+const lastClassCatArr = [
+  {
+    value: "",
+    label: "Select class last passed",
+  },
+  {
+    value: "junior-sec-one",
+    label: "JS One",
+  },
+  {
+    value: "junior-sec-two",
+    label: "JS Two",
+  },
+  {
+    value: "junior-sec-three",
+    label: "JS Three",
+  },
+  {
+    value: "senior-sec-one",
+    label: "SS One",
+  },
+  {
+    value: "senior-sec-two",
+    label: "SS Two",
+  },
+  {
+    value: "senior-sec-three",
+    label: "SS Three",
+  },
+];
+
+// present class category array
+const presentClassCatArr = [
+  {
+    value: "",
+    label: "Select present class",
+  },
+  {
+    value: "junior-sec-one",
+    label: "JS One",
+  },
+  {
+    value: "junior-sec-two",
+    label: "JS Two",
+  },
+  {
+    value: "junior-sec-three",
+    label: "JS Three",
+  },
+  {
+    value: "senior-sec-one",
+    label: "SS One",
+  },
+  {
+    value: "senior-sec-two",
+    label: "SS Two",
+  },
+  {
+    value: "senior-sec-three",
+    label: "SS Three",
+  },
+];
 
 const SchoolInfoForm = (props) => {
   const {
@@ -34,18 +98,16 @@ const SchoolInfoForm = (props) => {
         style={`w-[527px] h-[50px]`}
       />
       <div className="flex ">
-        <InputField
+        <SelectField
           name={lastClassPassed.name}
           label={lastClassPassed.label}
-          placeholder={lastClassPassed.placeholder}
-          inputType="text"
-          style={`mr-[15px] w-[256px] h-[50px]`}
+          data={lastClassCatArr}
+          style={`w-[256px] h-[50px] mr-[15px]`}
         />
-        <InputField
+        <SelectField
           name={presentClass.name}
           label={presentClass.label}
-          placeholder={presentClass.placeholder}
-          inputType="text"
+          data={presentClassCatArr}
           style={`w-[256px] h-[50px]`}
         />
       </div>

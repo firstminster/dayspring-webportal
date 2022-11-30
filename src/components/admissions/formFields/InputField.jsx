@@ -4,7 +4,7 @@ import { at } from "lodash";
 
 const InputField = (props) => {
   const { name, label, placeholder, inputType, style, labelStyle } = props;
-  const [field, meta] = useField(props.name);
+  // const [field, meta] = useField(props.name);
   // const [touched, error] = at(meta, "touched", "error");
   // const isError = touched && error && true;
   // console.log(field);

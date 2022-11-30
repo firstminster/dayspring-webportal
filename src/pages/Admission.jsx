@@ -92,7 +92,7 @@ const Admission = () => {
       case 2:
         return <SchoolInfoForm formField={formField} />;
       case 3:
-        return <TransferPupilInfoForm />;
+        return <TransferPupilInfoForm formField={formField} />;
       case 4:
         return <HealthHistoryForm />;
       default:
