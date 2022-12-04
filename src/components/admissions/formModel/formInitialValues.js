@@ -51,6 +51,7 @@ const {
     disciplinaryDifficultyTransfer,
     academicDifficultyTransfer,
     emotionalChallengeTransfer,
+    checkedIllnesses,
   },
 } = admissionFormModel;
 
@@ -103,4 +104,5 @@ export default {
   [disciplinaryDifficultyTransfer.name]: "",
   [academicDifficultyTransfer.name]: "",
   [emotionalChallengeTransfer.name]: "",
+  [checkedIllnesses.name]: [],
 };

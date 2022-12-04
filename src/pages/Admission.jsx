@@ -94,7 +94,7 @@ const Admission = () => {
       case 3:
         return <TransferPupilInfoForm formField={formField} />;
       case 4:
-        return <HealthHistoryForm />;
+        return <HealthHistoryForm formField={formField} />;
       default:
         return <div>Not Found</div>;
     }
@@ -112,7 +112,6 @@ const Admission = () => {
             or less.
           </p>
         </div>
-
         <div className="container mx-auto flex flex-col items-center justify-center">
           {/* Notice */}
           <div className="my-[27px]">

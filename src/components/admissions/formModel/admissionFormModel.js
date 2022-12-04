@@ -290,5 +290,229 @@ export default {
       placeholder: "Enter answer here",
       requiredErrorMsg: "Field is required",
     },
+    // allergy: {
+    //   name: "allergy",
+    //   label: "Allergy",
+    //   // placeholder: "Enter answer here",
+    //   // requiredErrorMsg: "Field is required",
+    // },
+    // dateOfAllergy: {
+    //   name: "dateOfAllergy",
+    //   placeholder: "DD/MM/YYYY",
+    //   // label: "Date of Allergy",
+    //   // requiredErrorMsg: "Date of birth is required",
+    // },
+    // smallpox: {
+    //   name: "smallpox",
+    //   label: "Smallpox",
+    //   // placeholder: "Enter answer here",
+    //   // requiredErrorMsg: "Field is required",
+    // },
+    // dateOfSmallpox: {
+    //   name: "dateOfSmallpox",
+    //   placeholder: "DD/MM/YYYY",
+    //   // label: "Date of SmallPox",
+    //   // requiredErrorMsg: "Date of birth is required",
+    // },
+    // measles: {
+    //   name: "measles",
+    //   label: "Measles",
+    //   // placeholder: "Enter answer here",
+    //   // requiredErrorMsg: "Field is required",
+    // },
+    // dateOfMeasles: {
+    //   name: "dateOfMeasles",
+    //   placeholder: "DD/MM/YYYY",
+
+    //   // requiredErrorMsg: "Date of birth is required",
+    // },
+    // mumps: {
+    //   name: "mumps",
+    //   label: "Mumps",
+    //   // placeholder: "Enter answer here",
+    //   // requiredErrorMsg: "Field is required",
+    // },
+    // dateOfMumps: {
+    //   name: "dateOfMumps",
+    //   placeholder: "DD/MM/YYYY",
+    //   // requiredErrorMsg: "Date of birth is required",
+    // },
+    // poliomyetis: {
+    //   name: "poliomyetis",
+    //   label: "Poliomyetis",
+    //   // placeholder: "Enter answer here",
+    //   // requiredErrorMsg: "Field is required",
+    // },
+    // dateOfPoliomyetis: {
+    //   name: "dateOfPoliomyetis",
+    //   placeholder: "DD/MM/YYYY",
+    //   // requiredErrorMsg: "Date of birth is required",
+    // },
+    // rheumatic: {
+    //   name: "rheumatic",
+    //   label: "Rheumatic",
+    //   // placeholder: "Enter answer here",
+    //   // requiredErrorMsg: "Field is required",
+    // },
+    // dateOfRheumatic: {
+    //   name: "dateOfRheumatic",
+    //   placeholder: "DD/MM/YYYY",
+    //   // requiredErrorMsg: "Date of birth is required",
+    // },
+    // fever: {
+    //   name: "fever",
+    //   label: "Fever",
+    //   // placeholder: "Enter answer here",
+    //   // requiredErrorMsg: "Field is required",
+    // },
+    // dateOfFever: {
+    //   name: "dateOfFever",
+    //   placeholder: "DD/MM/YYYY",
+    //   // requiredErrorMsg: "Date of birth is required",
+    // },
+    // pneumatic: {
+    //   name: "pneumatic",
+    //   label: "Pneumatic",
+    //   // placeholder: "Enter answer here",
+    //   // requiredErrorMsg: "Field is required",
+    // },
+    // dateOfPneumatic: {
+    //   name: "dateOfPneumatic",
+    //   placeholder: "DD/MM/YYYY",
+    //   // requiredErrorMsg: "Date of birth is required",
+    // },
+    // whoopingCough: {
+    //   name: "whoopingCough",
+    //   label: "Whooping Cough",
+    //   // placeholder: "Enter answer here",
+    //   // requiredErrorMsg: "Field is required",
+    // },
+    // dateOfWhoopingCough: {
+    //   name: "dateOfWhoopingCough",
+    //   placeholder: "DD/MM/YYYY",
+    //   // requiredErrorMsg: "Date of birth is required",
+    // },
+    checkedIllnesses: [
+      {
+        allergy: {
+          name: "allergy",
+          label: "Allergy",
+          // placeholder: "Enter answer here",
+          // requiredErrorMsg: "Field is required",
+        },
+        dateOfAllergy: {
+          name: "dateOfAllergy",
+          placeholder: "DD/MM/YYYY",
+          // label: "Date of Allergy",
+          // requiredErrorMsg: "Date of birth is required",
+        },
+      },
+      {
+        smallpox: {
+          name: "smallpox",
+          label: "Smallpox",
+          // placeholder: "Enter answer here",
+          // requiredErrorMsg: "Field is required",
+        },
+        dateOfSmallpox: {
+          name: "dateOfSmallpox",
+          placeholder: "DD/MM/YYYY",
+          // label: "Date of SmallPox",
+          // requiredErrorMsg: "Date of birth is required",
+        },
+      },
+      {
+        measles: {
+          name: "measles",
+          label: "Measles",
+          // placeholder: "Enter answer here",
+          // requiredErrorMsg: "Field is required",
+        },
+        dateOfMeasles: {
+          name: "dateOfMeasles",
+          placeholder: "DD/MM/YYYY",
+
+          // requiredErrorMsg: "Date of birth is required",
+        },
+      },
+      {
+        mumps: {
+          name: "mumps",
+          label: "Mumps",
+          // placeholder: "Enter answer here",
+          // requiredErrorMsg: "Field is required",
+        },
+        dateOfMumps: {
+          name: "dateOfMumps",
+          placeholder: "DD/MM/YYYY",
+          // requiredErrorMsg: "Date of birth is required",
+        },
+      },
+      {
+        poliomyetis: {
+          name: "poliomyetis",
+          label: "Poliomyetis",
+          // placeholder: "Enter answer here",
+          // requiredErrorMsg: "Field is required",
+        },
+        dateOfPoliomyetis: {
+          name: "dateOfPoliomyetis",
+          placeholder: "DD/MM/YYYY",
+          // requiredErrorMsg: "Date of birth is required",
+        },
+      },
+      {
+        rheumatic: {
+          name: "rheumatic",
+          label: "Rheumatic",
+          // placeholder: "Enter answer here",
+          // requiredErrorMsg: "Field is required",
+        },
+        dateOfRheumatic: {
+          name: "dateOfRheumatic",
+          placeholder: "DD/MM/YYYY",
+          // requiredErrorMsg: "Date of birth is required",
+        },
+      },
+      {
+        fever: {
+          name: "fever",
+          label: "Fever",
+          // placeholder: "Enter answer here",
+          // requiredErrorMsg: "Field is required",
+        },
+        dateOfFever: {
+          name: "dateOfFever",
+          placeholder: "DD/MM/YYYY",
+          // requiredErrorMsg: "Date of birth is required",
+        },
+      },
+      {
+        pneumatic: {
+          name: "pneumatic",
+          label: "Pneumatic",
+          // placeholder: "Enter answer here",
+          // requiredErrorMsg: "Field is required",
+        },
+        dateOfPneumatic: {
+          name: "dateOfPneumatic",
+          placeholder: "DD/MM/YYYY",
+          // requiredErrorMsg: "Date of birth is required",
+        },
+      },
+      {
+        whoopingCough: {
+          name: "whoopingCough",
+          label: "Whooping Cough",
+          // placeholder: "Enter answer here",
+          // requiredErrorMsg: "Field is required",
+        },
+        dateOfWhoopingCough: {
+          name: "dateOfWhoopingCough",
+          placeholder: "DD/MM/YYYY",
+          // requiredErrorMsg: "Date of birth is required",
+        },
+      },
+    ],
   },
 };

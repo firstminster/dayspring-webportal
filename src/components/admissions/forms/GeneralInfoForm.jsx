@@ -112,6 +112,8 @@ const GeneralInfoForm = (props) => {
     },
   } = props;
 
+  console.log(props);
+
   return (
     // input fields
     <div className="flex flex-col items-center space-y-5 mt-[19px]">
