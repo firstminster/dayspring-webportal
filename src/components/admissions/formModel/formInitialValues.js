@@ -104,5 +104,5 @@ export default {
   [disciplinaryDifficultyTransfer.name]: "",
   [academicDifficultyTransfer.name]: "",
   [emotionalChallengeTransfer.name]: "",
-  [checkedIllnesses.name]: [],
+  // [checkedIllnesses.name]: [],
 };

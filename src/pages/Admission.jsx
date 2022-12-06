@@ -102,11 +102,11 @@ const Admission = () => {
 
   return (
     <section className="relative">
-      <div className="absolute top-[95px]">
+      <div className="absolute top-[75px] lg:top-[95px]">
         {/* Header */}
-        <div className="flex flex-col items-center justify-center text-white bg-gradient-to-r from-blue-primary via-medium-slate-blue to-medium-orchid w-screen h-[280px] ">
-          <h1 className="text-6xl font-semibold">Admissions</h1>
-          <p className="text-center mt-[21px] text-2xl ">
+        <div className="flex flex-col items-center justify-center text-white bg-gradient-to-r from-blue-primary via-medium-slate-blue to-medium-orchid w-screen h-[280px]">
+          <h1 className="text-4xl lg:text-6xl font-semibold">Admissions</h1>
+          <p className="text-center mt-[21px] text-base lg:text-2xl ">
             To enrol your child at Dayspring Academy, kindly assist <br />
             them in filling the form below. This should take <br /> 30 minutes
             or less.
@@ -115,15 +115,15 @@ const Admission = () => {
         <div className="container mx-auto flex flex-col items-center justify-center">
           {/* Notice */}
           <div className="my-[27px]">
-            <p className="">
+            <p className="text-base lg:text-lg text-center mx-[29px]">
               On completing this form, you will be required to pay a
               registration fee of N10,000.
             </p>
           </div>
           <>
             {/* Forms header */}
-            <div className="flex items-center justify-between w-[527px]">
-              <h2 className="text-3xl font-semibold mr-[160px]">
+            <div className="flex items-center justify-between w-[316px] lg:w-[527px]">
+              <h2 className="text-xl lg:text-3xl font-semibold mr-[44px] lg:mr-[160px]">
                 {steps.find((label, idx) => {
                   return idx === activeStep;
                 })}
@@ -150,7 +150,7 @@ const Admission = () => {
                     <div className="flex items-center justify-center">
                       <button
                         disabled={isSubmitting}
-                        className="flex items-center justify-center w-[180px] h-[37px] lg:w-[527px] lg:h-[49px] px-[20px] py-[8px] my-[48px] bg-blue-primary text-white text-[16px] xl:text-lg rounded-full hover:bg-medium-orchid transition-all duration-300 ease-out "
+                        className="flex items-center justify-center w-[308px] lg:w-[527px] h-[49px] px-[20px] py-[8px] my-[48px] bg-blue-primary text-white text-[16px] xl:text-lg rounded-full hover:bg-medium-orchid transition-all duration-300 ease-out "
                       >
                         {isLastStep ? "Submit & Make payment" : "Next"}
                         <FaArrowRight className="ml-3 w-[13.54px] h-[11.89px] text-white " />
